@@ -37,15 +37,11 @@ mapa.addEventListener('click', (e) => {
     // alert(`${desarrollo} ${e.target.id}`)
     // alertas.AbrirLoginForm();
     alertas.openLoginForm();
-    // info.innerHTML = 
+    info.innerHTML = "Apartando: " + desarrollo + " " +e.target.id;
   }
 })
 
-// fetch ('./producto.json')
-//   .then(resp =>resp.json())
-//   .then(data=>{
-//     console.log(data);
-//   })
+
 
 fetch ('./producto.json')
   .then(resp =>resp.json())
