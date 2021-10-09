@@ -37,25 +37,27 @@ mapa.addEventListener('click', (e) => {
     // alert(`${desarrollo} ${e.target.id}`)
     // alertas.AbrirLoginForm();
     alertas.openLoginForm();
-    info.innerHTML = "Apartando: " + desarrollo + " " +e.target.id;
+    info.innerHTML = desarrollo + " " +e.target.id;
   }
 })
-
-
 
 fetch ('./producto.json')
   .then(resp =>resp.json())
   .then(data=>{
-      document.querySelector(".l1").innerText = data.Nombre_Fraccionamiento;
-      document.querySelector(".l2").innerText =data.Manzana;
-      document.querySelector(".l3").innerText =data.Lote;
-      document.querySelector(".l4").innerText =data.Dimension_del_Terreno_M21;
-      document.querySelector(".l5").innerText =data.Costo_total_del_terreno;
+    let info = document.querySelector(".info-lote")
+    let trato = document.createElement("p");
+    trato.textContent = data.Nombre_Fraccionamiento + " " + data.Manzana + "-" +data.Lote;
+    info.appendChild(trato);
+    let dimension = document.createElement("p");
+    dimension.textContent = "Dimension: " + data.Dimension_del_Terreno_M21 + "m2";
+    info.appendChild(dimension);
+    let total = document.createElement("p");
+    total.textContent = "Costo total: $ " + data.Costo_total_del_terreno;
+    info.appendChild(total); 
+      // document.querySelector(".l4").innerText =data.Dimension_del_Terreno_M21;
+      // document.querySelector(".l5").innerText =data.Costo_total_del_terreno;
       
     })
-
-  
-
 /*
   fetch(`./desarrollos/${desarrollo}/plano.svg`)
     .then((svg) => {
