@@ -239,7 +239,7 @@ footer i{
 }
 .mapa-interactivo{
     width: 95vw;
-    height: 725px;
+    height: 600px;
     border-radius: 11px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     background-color: #fff;
@@ -453,7 +453,7 @@ footer i{
     display:block;
   }
   body.showLoginForm .popup {
-    top:50%;
+    top:230%;
     opacity:1;
     transform:translate(-50%,-50%) scale(1);
   }
