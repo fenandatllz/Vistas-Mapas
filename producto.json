@@ -1,0 +1,8 @@
+{
+    "Nombre_Fraccionamiento":"Villa Prueba",
+    "Manzana": "M1",
+    "Lote": "L1",
+    "Costo_por_M2":200,
+    "Costo_total_del_terreno":40000,
+    "Dimension_del_Terreno_M21":200
+}
