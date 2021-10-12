@@ -648,29 +648,26 @@ color: #656565;
     background-color: #000;
 }
 
-.burbuja{
-    width: 25%;
-    position: relative;
+#info-lote {
+    width: 400px;
     padding: 20px;
-    border-radius: 7px;
-    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    background-color:rgb(88, 80, 80);
     color:#fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
-}
-
-.burbuja:after{
-    content: "";
-    display: block;
+    border-radius: 6px;
     position: absolute;
-    
-    bottom: -15px;
-    margin-left: 50px;
-
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-
-    border-top: 15px solid rgba(0, 0, 0, 0.5);
-}
+    display: none;
+  }
+  
+  #info-lote::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: rgb(88, 80, 80);
+    position: absolute;
+    left: -6px;
+    top: 68px;
+  }
+ 
