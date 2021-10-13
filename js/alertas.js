@@ -10,12 +10,12 @@ const login = document.querySelector('.btn-login');
             document.body.classList.remove("showLoginForm");
         }
         
-closeMonto.addEventListener('click', ()=>{
-    closeLoginForm();
-})
+        closeMonto.addEventListener('click', ()=>{
+            closeLoginForm();
+        })
 
 // FormularioLogin
- export function AbrirLoginForm(){
+  function AbrirLoginForm(){
     document.body.classList.add("MostrarLoginForm");
 } 
 function CerrarLoginForm(){
@@ -32,7 +32,7 @@ login.addEventListener('click',()=>{
 // Alerta Pago Exitoso
 let x;
 let toast = document.getElementById("toast");
- export function showToast(){
+  function showToast(){
         clearTimeout(x);
         toast.style.transform = "translateX(0)";
         x = setTimeout(()=>{

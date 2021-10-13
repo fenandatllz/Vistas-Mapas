@@ -109,6 +109,35 @@
         </a>
     </div>
 </main>
+
+<!-- LOGIN -->
+<div class="popup-overlay-login"></div>
+<div class="popup-login">
+  <div class="button-box">
+      <div id="popup-login-close" class="popup-close-login">×</div>
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+      <button type="button" class="toggle-btn" onclick="registro()">Registrar</button>
+  </div>
+  <form  id="login" class="input-group">
+      <input type="email" class="input-field" placeholder="Correo electrónico" required>
+      <input type="password" class="input-field" placeholder="Contraseña" required>
+      <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span>
+      <button type="submit" class="submit-btn">Iniciar Sesión</button>
+  </form>
+  <form id="registro" class="input-group">
+      <input type="text" class="input-field" placeholder="Nombre(s)" required>
+      <input type="text" class="input-field" placeholder="Apellidos" required>
+      <input type="tel" class="input-field" placeholder="Telefono" required>
+      <input type="email" class="input-field" placeholder="Correo Electrónico" required>
+      <input type="password" class="input-field" placeholder="Contraseña" required>
+      <input type="password" class="input-field" placeholder="Confirmar Contraseña" required>
+      <input type="checkbox" id="check-registro" class="checkbox"><span>Acepto los terminos y condiciones</span>
+      <button type="submit" class="submit-btn">Registrar</button>
+  </form>
+</div>
+<!-- </div> -->
+
 <span class="arriba">
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DE9F27" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -149,6 +178,8 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="./js/alertas.js" type="module" ></script>
+    <script src="./js/login.js"></script>
     <script src="./js/navegacion.js"></script>
     <script src="./js/loader.js"></script>
 

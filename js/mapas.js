@@ -43,7 +43,9 @@ mapa.addEventListener('click', (e) => {
     info.innerHTML = desarrollo + " " +e.target.id;
   }
 })
-
+closeMonto.addEventListener('click', ()=>{
+  closeLoginForm();
+})
 mapa.addEventListener('mouseover', (e) => {
   if (e.target.matches('[data-lote]')) {
     toolTip.innerHTML="";

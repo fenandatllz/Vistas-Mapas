@@ -1,6 +1,6 @@
-let a = document.getElementById('login');
-let b = document.getElementById('registro');
-let c = document.getElementById('btn');
+const a = document.getElementById('login');
+const b = document.getElementById('registro');
+const c = document.getElementById('btn');
 
 function registro (){
     a.style.left ='-400px';
