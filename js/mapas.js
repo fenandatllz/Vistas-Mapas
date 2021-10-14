@@ -61,8 +61,8 @@ mapa.addEventListener('mouseover', (e) => {
     let total = document.createElement("p");
     total.textContent = "Costo total: $ " + e.target.dataset.costototal;
     toolTip.appendChild(total); 
-     posicionX = e.clientX;
-     posicionY = e.clientY;
+     posicionX = e.pageX;
+     posicionY = e.pageY;
     showPopup();
   }
 })
@@ -76,8 +76,8 @@ mapa.addEventListener('mouseout', (e) => {
     function showPopup(evt) {
       let mapaSvg = mapa.querySelector('#map'); 
       let map = mapaSvg.getBoundingClientRect();
-      toolTip.style.top = map.posicionY ;
-      toolTip.style.left = map.posicionX;
+      toolTip.style.left = posicionX + 'px';
+      toolTip.style.top = posicionY + 'px';
       toolTip.style.display = "block";
     }
     
