@@ -653,21 +653,22 @@ color: #656565;
     padding: 20px;
     font-family: Arial, sans-serif;
     font-size: 10pt;
-    background-color:rgba(88, 80, 80);
+    background-color:rgb(88, 80, 80);
     color:#fff;
     border-radius: 6px;
     position: absolute;
     display: none;
   }
   
-  #info-lote::before {
+  #info-lote:after{
     content: "";
-    width: 12px;
-    height: 12px;
-    transform: rotate(45deg);
-    background-color: rgb(88, 80, 80);
     position: absolute;
-    left: -6px;
-    top: 20px;
-  }
- 
+    top: 10px;
+    left: -15px;
+    transform: rotate(90deg); 
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid rgb(73, 70, 70);
+}
