@@ -1,4 +1,5 @@
-import  * as alertas  from "./alertas.js";
+// import  * as alertas  from "./alertas.js";
+import { openLoginForm } from "./alertas.js";
 const btnGetDesarrollo = document.querySelector('#get-desarrollo');
 let posicionY = 0;
 let posicionX = 0;
@@ -41,7 +42,7 @@ mapa.addEventListener('click', (e) => {
   const info = document.querySelector('.info-apartado')
   if (e.target.matches('[data-lote]')) {
     console.log(`${desarrollo} ${e.target.id}`)
-    alertas.openLoginForm();
+    openLoginForm();
     info.innerHTML = desarrollo + " " +e.target.id;
   }
 })
@@ -92,7 +93,6 @@ mapa.addEventListener('mouseout', (e) => {
       if (!svg.ok) {
         throw Error('No esta disponible por el momento')
       }
-
       svg.text()
     })
     .then((html) => (mapa.innerHTML = html))

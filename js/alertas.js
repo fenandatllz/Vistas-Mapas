@@ -1,33 +1,18 @@
 const closeMonto = document.getElementById('popup-apartado-close');
-const closeLogin = document.getElementById('popup-login-close');
-const login = document.querySelector('.btn-login');
 
-// Formulario Monto Pago
+// Abrir Formulario Monto-Pago
  export function openLoginForm(){
             document.body.classList.add("showLoginForm");
         } 
-        function closeLoginForm(){
+// Cerrar Formulario
+   function closeLoginForm(){
             document.body.classList.remove("showLoginForm");
         }
-        
-        closeMonto.addEventListener('click', ()=>{
-            closeLoginForm();
-        })
 
-// FormularioLogin
-  function AbrirLoginForm(){
-    document.body.classList.add("MostrarLoginForm");
-} 
-function CerrarLoginForm(){
-    document.body.classList.remove("MostrarLoginForm");
-}
+ closeMonto.addEventListener('click', ()=>{
+    closeLoginForm();
+})
 
-closeLogin.addEventListener('click', ()=>{
-    CerrarLoginForm();
-})
-login.addEventListener('click',()=>{
-    AbrirLoginForm();
-})
 
 // Alerta Pago Exitoso
 let x;
@@ -39,7 +24,7 @@ let toast = document.getElementById("toast");
              toast.style.transform = "translateX(400px)"
              }, 4000);
             }
-        function closeToast(){
+       function closeToast(){
              toast.style.transform = "translateX(400px)";
         }
 //Alerta Error Pago 
@@ -58,18 +43,18 @@ let toast = document.getElementById("toast");
         //Nota *Cambiar nombre a la funcion closeToast*
 
 // Modal Pago Exitoso
-const btnPago = document.querySelector('#btn-enviar');
-btnPago.addEventListener('click', () => {  
-     document.getElementsByClassName("success");
-     closeLoginForm();
-    });
+// const btnPago = document.querySelector('#btn-enviar');
+// btnPago.addEventListener('click', () => {  
+//      document.getElementsByClassName("success");
+//      closeLoginForm();
+//     });
 
 //Modal Pago Sin Exito
-const btnCancelar = document.querySelector('#btn-cancelar');
-btnCancelar.addEventListener('click', () => {  
-     document.getElementsByClassName("error");
-     closeLoginForm();
-    });
+// const btnCancelar = document.querySelector('#btn-cancelar');
+//  btnCancelar.addEventListener('click', () => {  
+//      document.getElementsByClassName("error");
+//      closeLoginForm();
+//     });
 
 
 
