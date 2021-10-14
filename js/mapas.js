@@ -1,7 +1,9 @@
 import  * as alertas  from "./alertas.js";
 const btnGetDesarrollo = document.querySelector('#get-desarrollo');
+let posicionY = 0;
+let posicionX = 0;
 const toolTip = document.getElementById('info-lote');
-const mapa = document.getElementById('mapa-interactivo');
+let mapa = document.getElementById('mapa-interactivo');
 
 const loadManzana = async (desarrollo, manzana) => {
   fetch(`./desarrollos/${desarrollo}/Manzanas/${manzana}.svg`)
@@ -43,9 +45,7 @@ mapa.addEventListener('click', (e) => {
     info.innerHTML = desarrollo + " " +e.target.id;
   }
 })
-closeMonto.addEventListener('click', ()=>{
-  closeLoginForm();
-})
+
 mapa.addEventListener('mouseover', (e) => {
   if (e.target.matches('[data-lote]')) {
     toolTip.innerHTML="";
@@ -61,6 +61,8 @@ mapa.addEventListener('mouseover', (e) => {
     let total = document.createElement("p");
     total.textContent = "Costo total: $ " + e.target.dataset.costototal;
     toolTip.appendChild(total); 
+     posicionX = e.clientX;
+     posicionY = e.clientY;
     showPopup();
   }
 })
@@ -72,10 +74,10 @@ mapa.addEventListener('mouseout', (e) => {
 })
 
     function showPopup(evt) {
-      let mapaSvg = mapa.querySelector('#map');
+      let mapaSvg = mapa.querySelector('#map'); 
       let map = mapaSvg.getBoundingClientRect();
-      toolTip.style.left = (map.right + 20) + "px";
-      toolTip.style.top = (window.scrollY + map.top - 60) + "px";
+      toolTip.style.top = map.posicionY ;
+      toolTip.style.left = map.posicionX;
       toolTip.style.display = "block";
     }
     
