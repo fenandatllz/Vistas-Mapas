@@ -1,6 +1,9 @@
 // import  * as alertas  from "./alertas.js";
 import { openLoginForm } from "./alertas.js";
-const btnGetDesarrollo = document.querySelector('#get-desarrollo');
+// const btnGetDesarrollo = document.querySelector('#get-desarrollo');
+// const getDesarrollo = document.querySelector('#nombre-desarrollo');
+// console.log(getDesarrollo.innerHTML);
+
 let posicionY = 0;
 let posicionX = 0;
 const toolTip = document.getElementById('info-lote');
@@ -14,17 +17,29 @@ const loadManzana = async (desarrollo, manzana) => {
     
 }
 
-btnGetDesarrollo.addEventListener('click', (e) => {
+// btnGetDesarrollo.addEventListener('click', (e) => {
+//   const desarrollo = document
+//     .querySelector('#desarrollo')
+//     .value.toLowerCase()
+//     .replace(' ', '-')
+
+//   mapa.innerHTML = ''
+//   fetch(`./desarrollos/${desarrollo}/plano.svg`)
+//     .then((svg) => svg.text())
+//     .then((html) => (mapa.innerHTML = html))  
+// })
+
   const desarrollo = document
-    .querySelector('#desarrollo')
-    .value.toLowerCase()
+    .querySelector('#nombre-desarrollo')
+    .innerHTML
+    .toLowerCase()
     .replace(' ', '-')
 
   mapa.innerHTML = ''
   fetch(`./desarrollos/${desarrollo}/plano.svg`)
     .then((svg) => svg.text())
     .then((html) => (mapa.innerHTML = html))  
-})
+
 
 mapa.addEventListener('click', (e) => {
   if (e.target.matches('[data-manzana]')) {
@@ -32,11 +47,12 @@ mapa.addEventListener('click', (e) => {
     const fraccionamiento = e.target.closest('svg').dataset.desarrollo
     console.log(fraccionamiento, manzana)
     loadManzana(fraccionamiento, manzana)
+    // console.log()
   }
 })
 
 mapa.addEventListener('click', (e) => {
-  const desarrollo = document.querySelector('#desarrollo').value
+  const desarrollo = document.querySelector('#nombre-desarrollo').innerHTML
   const info = document.querySelector('.info-apartado')
   if (e.target.matches('[data-lote]')) {
     console.log(`${desarrollo} ${e.target.id}`)

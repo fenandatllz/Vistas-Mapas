@@ -1,8 +1,8 @@
 const closeMonto = document.getElementById('popup-apartado-close');
 const btnEnviar = document.getElementById('btn-enviar');
 const btnCancelarPago = document.getElementById('btn-cancelar');
-const btnCerrarAlerta = document.getElementById('close');
-
+const btnCerrarAlerta = document.getElementById('close'); //Cerrar Alerta Pago exitoso
+const btnCerrarAlert = document.getElementById('close-sin-exito');//Cerrar Alerta Pago sin exito
 
 // Abrir Formulario Monto-Pago
  export function openLoginForm(){
@@ -16,7 +16,6 @@ const btnCerrarAlerta = document.getElementById('close');
  closeMonto.addEventListener('click', ()=>{
     closeLoginForm();
 })
-
 
 // Alerta Pago Exitoso
 btnEnviar.addEventListener('click', ()=>{
@@ -40,9 +39,10 @@ btnCancelarPago.addEventListener('click', () =>{
         showAlerta();
 })
 
+let y;
+let alerta = document.getElementById("toast2");
+
         function showAlerta(){
-        let y;
-        let alerta = document.getElementById("toast2");
                 clearTimeout(y);
                 alerta.style.transform = "translateX(0)";
                 y = setTimeout(()=>{
@@ -52,10 +52,14 @@ btnCancelarPago.addEventListener('click', () =>{
                 function cerrarToast(){
                      alerta.style.transform = "translateX(400px)";
                 }
-//Cerrar Alertas de pago exitoso o no
+//Cerrar Alertas de pago exitoso y pago sin exito
 btnCerrarAlerta.addEventListener('click', ()=>{
         closeToast();
 })
+btnCerrarAlert.addEventListener('click', ()=>{
+        cerrarToast();
+})
+
 // Modal Pago Exitoso
 const btnPago = document.querySelector('#btn-enviar');
 btnPago.addEventListener('click', () => {  

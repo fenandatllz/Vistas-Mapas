@@ -453,7 +453,7 @@ footer i{
     display:block;
   }
   body.showLoginForm .popup {
-    top:230%;
+    top:80%;
     opacity:1;
     transform:translate(-50%,-50%) scale(1);
   }
@@ -576,6 +576,7 @@ footer i{
     right: 0;
     overflow: hidden;
     position: fixed;
+    z-index: 1;
 }
 
 .success{
@@ -649,13 +650,13 @@ color: #656565;
 }
 
 #info-lote {
-    width: 400px;
+    width: 200px;
     padding: 20px;
     font-family: Arial, sans-serif;
     font-size: 10pt;
     background-color:rgb(88, 80, 80);
     color:#fff;
-    border-radius: 6px;
+    border-radius: 8px;
     position: absolute;
     display: none;
   }
