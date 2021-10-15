@@ -1,4 +1,8 @@
 const closeMonto = document.getElementById('popup-apartado-close');
+const btnEnviar = document.getElementById('btn-enviar');
+const btnCancelar = document.getElementById('btn-cancelar');
+const btnCerrarAlerta = document.getElementById('close');
+
 
 // Abrir Formulario Monto-Pago
  export function openLoginForm(){
@@ -15,9 +19,13 @@ const closeMonto = document.getElementById('popup-apartado-close');
 
 
 // Alerta Pago Exitoso
-let x;
-let toast = document.getElementById("toast");
+btnEnviar.addEventListener('click', ()=>{
+        showToast();
+})
+
   function showToast(){
+        let x;
+        let toast = document.getElementById("toast");
         clearTimeout(x);
         toast.style.transform = "translateX(0)";
         x = setTimeout(()=>{
@@ -28,33 +36,39 @@ let toast = document.getElementById("toast");
              toast.style.transform = "translateX(400px)";
         }
 //Alerta Error Pago 
-        // let y;
-        // let alerta = document.getElementById("toast2");
-        //     function showAlerta(){
-        //         clearTimeout(y);
-        //         alerta.style.transform = "translateX(0)";
-        //         y = setTimeout(()=>{
-        //              alerta.style.transform = "translateX(400px)"
-        //              }, 4000);
-        //             }
-        //         function closeToast(){
-        //              alerta.style.transform = "translateX(400px)";
-        //         }
-        //Nota *Cambiar nombre a la funcion closeToast*
+btnCancelar.addEventListener('click', () =>{
+        showAlerta();
+})
 
+        function showAlerta(){
+        let y;
+        let alerta = document.getElementById("toast2");
+                clearTimeout(y);
+                alerta.style.transform = "translateX(0)";
+                y = setTimeout(()=>{
+                     alerta.style.transform = "translateX(400px)"
+                     }, 4000);
+                    }
+                function cerrarToast(){
+                     alerta.style.transform = "translateX(400px)";
+                }
+//Cerrar Alertas de pago exitoso o no
+btnCerrarAlerta.addEventListener('click', ()=>{
+        closeToast();
+})
 // Modal Pago Exitoso
-// const btnPago = document.querySelector('#btn-enviar');
-// btnPago.addEventListener('click', () => {  
-//      document.getElementsByClassName("success");
-//      closeLoginForm();
-//     });
+const btnPago = document.querySelector('#btn-enviar');
+btnPago.addEventListener('click', () => {  
+     document.getElementsByClassName("success");
+     closeLoginForm();
+    });
 
 //Modal Pago Sin Exito
-// const btnCancelar = document.querySelector('#btn-cancelar');
-//  btnCancelar.addEventListener('click', () => {  
-//      document.getElementsByClassName("error");
-//      closeLoginForm();
-//     });
+const btnCancelar = document.querySelector('#btn-cancelar');
+ btnCancelar.addEventListener('click', () => {  
+     document.getElementsByClassName("error");
+     closeLoginForm();
+    });
 
 
 

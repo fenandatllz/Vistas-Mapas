@@ -23,9 +23,7 @@ btnGetDesarrollo.addEventListener('click', (e) => {
   mapa.innerHTML = ''
   fetch(`./desarrollos/${desarrollo}/plano.svg`)
     .then((svg) => svg.text())
-    .then((html) => (mapa.innerHTML = html))
-
-    
+    .then((html) => (mapa.innerHTML = html))  
 })
 
 mapa.addEventListener('click', (e) => {

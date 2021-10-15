@@ -116,13 +116,37 @@
                     </select>
                 </div>              
                     <div class="element">                          
-                        <button type="submit" id="btn-enviar" onclick="showToast()" class="enviar">Enviar</button>
+                        <button type="submit" id="btn-enviar" class="enviar">Enviar</button>
                     </div>
                     <div class="element">
-                        <button type="submit" id="btn-cancelar" onclick="showAlerta()" class="cancelar">Cancelar</button>
+                        <button type="submit" id="btn-cancelar" class="cancelar">Cancelar</button>
                     </div>
             </form>
     </div>
+    <!-- Alertas -->
+    <div class="wrapper">
+        <div id="toast" class ="success">
+            <div class="container-1">
+                <i class="fas fa-check-square"></i>
+            </div>
+            <div class="container-2">
+                <p>Pago Exitoso</p>
+                <p>Pago Realizado Con Exito.</p>
+            </div>
+            <button id="close" >&times;</button>
+        </div>
+        <div id="toast2" class="error">
+            <div class="container-1">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="container-2">
+                <p>Pago No Exitoso</p>
+                <p>Pago Realizado Sin Exito.</p>
+            </div>
+            <button id="close">&times;</button>
+        </div>
+    </div>
+<!-- Fin xD -->
     <!-- LOGIN -->
     <div class="popup-overlay-login"></div>
     <div class="popup-login">
