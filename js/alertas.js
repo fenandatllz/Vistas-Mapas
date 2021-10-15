@@ -13,8 +13,7 @@ const btnCerrarAlert = document.getElementById('close-sin-exito');//Cerrar Alert
    function closeLoginForm(){
             document.body.classList.remove("showLoginForm");
             const modal = document.getElementById('modal');
-        //     modal.style.top = 0;
-            modal.removeAttribute("top");
+            modal.style.top = -150 + '%';
         }
 
  closeMonto.addEventListener('click', ()=>{
