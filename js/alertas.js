@@ -6,11 +6,15 @@ const btnCerrarAlert = document.getElementById('close-sin-exito');//Cerrar Alert
 
 // Abrir Formulario Monto-Pago
  export function openLoginForm(){
-            document.body.classList.add("showLoginForm");
+        document.body.classList.add("showLoginForm");
+
         } 
 // Cerrar Formulario
    function closeLoginForm(){
             document.body.classList.remove("showLoginForm");
+            const modal = document.getElementById('modal');
+        //     modal.style.top = 0;
+            modal.removeAttribute("top");
         }
 
  closeMonto.addEventListener('click', ()=>{

@@ -6,6 +6,7 @@ import { openLoginForm } from "./alertas.js";
 
 let posicionY = 0;
 let posicionX = 0;
+// let posicionModal = 0;
 const toolTip = document.getElementById('info-lote');
 let mapa = document.getElementById('mapa-interactivo');
 
@@ -54,8 +55,12 @@ mapa.addEventListener('click', (e) => {
 mapa.addEventListener('click', (e) => {
   const desarrollo = document.querySelector('#nombre-desarrollo').innerHTML
   const info = document.querySelector('.info-apartado')
+  let posicionModal = e.pageY;
+  const modal = document.getElementById('modal');
   if (e.target.matches('[data-lote]')) {
     console.log(`${desarrollo} ${e.target.id}`)
+    console.log(`posicion:  ${posicionModal}`);
+    modal.style.top = posicionModal + 'px';
     openLoginForm();
     info.innerHTML = desarrollo + " " +e.target.id;
   }
