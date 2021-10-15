@@ -1,6 +1,6 @@
 const closeMonto = document.getElementById('popup-apartado-close');
 const btnEnviar = document.getElementById('btn-enviar');
-const btnCancelar = document.getElementById('btn-cancelar');
+const btnCancelarPago = document.getElementById('btn-cancelar');
 const btnCerrarAlerta = document.getElementById('close');
 
 
@@ -36,7 +36,7 @@ btnEnviar.addEventListener('click', ()=>{
              toast.style.transform = "translateX(400px)";
         }
 //Alerta Error Pago 
-btnCancelar.addEventListener('click', () =>{
+btnCancelarPago.addEventListener('click', () =>{
         showAlerta();
 })
 
