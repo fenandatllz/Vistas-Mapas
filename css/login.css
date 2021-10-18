@@ -110,6 +110,26 @@
       color: #ffff;
   }
 
+  .btn-logout{
+    color:#DE9F27;
+    font-size:15px;
+    border: 2px solid;
+    border-color: #DE9F27;
+    transition: all 1s ease;
+    border-radius:5px;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+    position: absolute;
+    right:7%;
+    display: none;
+    
+}
+
+.btn-logout:hover{
+    background: #C08500;
+    color: #ffff;
+}
   .popup-overlay-login {
     position:fixed;
     top:0px;

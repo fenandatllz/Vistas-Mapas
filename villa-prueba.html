@@ -19,7 +19,7 @@
         <a class="navbar-logo" href="index.html">
             <img src="https://download-accl.zoho.com/v1/docs/prv/i8756b24e8c232e0c4decb5911f28b49469b0?_t=1630356068833" >
         </a>
-        <button class="btn-login">Iniciar Sesión</button>
+        <button id="btn-login" class="btn-login">Iniciar Sesión</button>
     </nav>
 <header class="portada">
   <div id="container-slider">
@@ -98,17 +98,21 @@
                     <span class="info-apartado"> </span>
                 </div>
                 <div class="element">
-                    <input type="text" id="nombres-cliente" placeholder="Nombre(s)" required>
+                    <label>¿Desea dar un enganche?</label>
+                    <input type="checkbox" id="checkEnganche" onclick="MostrarDiv(this)">
                 </div>
-                <div class="element">
-                    <input type="text" id="apellidos-cliente" placeholder="Apellidos" required>
-                </div>
-                <div class="element">
-                    <input type="email" id="correo-cliente" placeholder="Correo electrónico" required>
+                <div class="element" id="mostrarEnganche" style="display: none;">
+                    <select name="monto-enganche" id="monto-enganche">
+                        <option value="0" disabled selected> Seleccione Monto de Enganche </option>
+                        <option value="1" >$ 100.00 DLLS</option>
+                        <option value="2" >$ 200.00 DLLS</option>
+                        <option value="3" >$ 300.00 DLLS</option>
+                        <option value="4" >$ 400.00 DLLS</option>
+                    </select>
                 </div>
                 <div class="element"> 
-                    <select name="monto-pago" id="monto-pago" required>
-                        <option value="0" disabled> Seleccione Monto de Apartado </option>
+                    <select name="monto-pago" id="monto-pago" >
+                        <option value="0" disabled selected> Seleccione Monto de Apartado </option>
                         <option value="1" >$ 50.00 DLLS</option>
                         <option value="2" >$ 100.00 DLLS</option>
                         <option value="3" >$ 150.00 DLLS</option>
@@ -160,7 +164,7 @@
           <input type="email" class="input-field" placeholder="Correo electrónico" required>
           <input type="password" class="input-field" placeholder="Contraseña" required>
           <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span>
-          <button type="submit" class="submit-btn">Iniciar Sesión</button>
+          <button type="submit" class="submit-btn" id="iniciar-sesion">Iniciar Sesión</button>
       </form>
       <form id="registro" class="input-group">
           <input type="text" class="input-field" placeholder="Nombre(s)" required>
@@ -223,5 +227,11 @@
     <script src="./js/loader.js"></script>
     <script src="./js/mapas.js" type="module" ></script>
     <script src="./js/login.js"></script>
+    <script>
+        function MostrarDiv(checkEnganche) {
+        var dvEnganche = document.getElementById("mostrarEnganche");
+        dvEnganche.style.display = checkEnganche.checked ? "block" : "none";
+    }
+    </script>
 </body>
 </html>
