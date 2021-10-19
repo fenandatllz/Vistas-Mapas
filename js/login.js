@@ -3,22 +3,37 @@ const b = document.getElementById('registro');
 const c = document.getElementById('btn');
 const closeLogin = document.getElementById('popup-login-close');
 const login = document.querySelector('.btn-login');
-const logout = document.querySelector('#btn-logout')
+const logout = document.querySelector('#btn-logout');
+const iniciarSesion = document.querySelector('#iniciar-sesion');
+const btnIniciar = document.getElementById('btn-iniciar');
+const btnRegistrar = document.getElementById('btn-registrar');
 
-document.getElementById('iniciar-sesion').addEventListener("click", iniciarSesion);
+iniciarSesion.addEventListener('click',()=>{
+    iniciar();
+})
 
-function iniciarSesion(){
-    sessionStorage.setItem("usuario", "prueba")
+
+function iniciar(){
+
+    sessionStorage.setItem("usuario", "Fernanda")
     sessionStorage.setItem("correo", document.getElementById('correo').value)
-    sessionStorage.setItem("contra", document.getElementById('contrase_a').value)
+    sessionStorage.setItem("contrase_a", document.getElementById('contrase_a').value)
     sessionStorage.setItem("sesion", true)
-    alert(sessionStorage.getItem("usuario") +"\n" + sessionStorage.getItem("correo") +"\n" + sessionStorage.getItem("sesion"))
+    document.getElementById('usuario').innerHTML = "Bienvenido(a): " + sessionStorage.getItem("user");
+
+    // alert(localStorage.getItem("correo") +"\n" + localStorage.getItem("contra"));
 }
-if(sessionStorage.getItem("sesion") == true)
-{
-    logout.style.display = "block";
-    login.style.display = "none";
-}
+
+// logout.addEventListener('click',()=>{
+
+// })
+
+btnIniciar.addEventListener('click', () => {
+    inicio();
+})
+btnRegistrar.addEventListener('click', () =>{
+    registro();
+})
 
 function registro (){
     a.style.left ='-400px';
@@ -33,7 +48,7 @@ function inicio (){
 }
 
 // FormularioLogin 
-function AbrirLoginForm(){
+export function AbrirLoginForm(){
     document.body.classList.add("MostrarLoginForm");
 } 
 function CerrarLoginForm(){
@@ -46,3 +61,4 @@ closeLogin.addEventListener('click', ()=>{
 login.addEventListener('click',()=>{
     AbrirLoginForm();
 })
+

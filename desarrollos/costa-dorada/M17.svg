@@ -1,0 +1,52 @@
+<svg id="Nombres" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      #Nombres{
+        background: black;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.96px;
+      }
+      .cls-2:hover{
+        fill: red;
+      }
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #de9f27;
+        stroke: #cbbf37;
+        stroke-width: 0.88px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#de9f27"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="M17" class="cls-1">
+    <path id="M17-L1" class="cls-2" d="M587.11,490.794l-6.785-13.378,2.663-3.593,14.27-7.237,18.366,5.263,1.809,3.567Z"/>
+    <path id="M17-L2" class="cls-2" d="M621.956,484.335l-4.523-8.919L587.11,490.794l4.523,8.919Z"/>
+    <path id="M17-L3" class="cls-2" d="M621.956,484.335l4.523,8.918-30.323,15.379-4.523-8.919Z"/>
+    <path id="M17-L4" class="cls-2" d="M626.479,493.253l4.975,9.811-30.323,15.378-4.975-9.81Z"/>
+    <path id="M17-L5" class="cls-2" d="M631.454,503.064l4.976,9.811-30.324,15.378-4.975-9.811Z"/>
+    <path id="M17-L6" class="cls-2" d="M636.43,512.875l4.975,9.81-30.324,15.378-4.975-9.81Z"/>
+    <path id="M17-L7" class="cls-2" d="M641.405,522.685l4.522,8.919L615.6,546.982l-4.523-8.919,30.324-15.378"/>
+    <path id="M17-L8" class="cls-2" d="M645.927,531.6l4.976,9.81-30.324,15.378-4.975-9.81Z"/>
+    <path id="M17-L9" class="cls-2" d="M650.9,541.414l4.523,8.919L625.1,565.711l-4.523-8.919Z"/>
+    <path id="M17-L10" class="cls-2" d="M655.426,550.333l4.07,8.027-0.879,2.688-1.331,1.8-24.081,12.212-2.236.012-1.344-.439-4.523-8.919Z"/>
+    <path id="M17-2" data-name="M17" class="cls-2" d="M616.076,472.741L659.5,558.36l-2.21,4.485-24.081,12.212-3.58-.427-49.3-97.214,2.663-3.593,14.27-7.237,18.366,5.263Z"/>
+  </g>

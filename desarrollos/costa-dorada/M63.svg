@@ -1,0 +1,63 @@
+<svg id="Nombres" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      #Nombres{
+        background: black;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.96px;
+      }
+      .cls-2:hover{
+        fill: red;
+      }
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #de9f27;
+        stroke: #cbbf37;
+        stroke-width: 0.88px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#de9f27"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="M63" class="cls-1">
+    <path id="M63-L1" class="cls-2" d="M1308.85,1106.99l3.17,6.24-26.76,13.57-8.59-16.95,1.32-4.03,13.37-6.79,17.04,7.06Z"/>
+    <path id="M63-L2" class="cls-2" d="M1312.02,1113.23l5.42,10.7-26.75,13.57-5.43-10.7Z"/>
+    <path id="M63-L3" class="cls-2" d="M1317.44,1123.93l4.53,8.92-26.76,13.57-4.52-8.92Z"/>
+    <path id="M63-L4" class="cls-2" d="M1321.97,1132.85l4.97,9.81-26.75,13.57-4.98-9.81Z"/>
+    <path id="M63-L5" class="cls-2" d="M1326.94,1142.66l4.98,9.81-26.76,13.57-4.97-9.81Z"/>
+    <path id="M63-L6" class="cls-2" d="M1331.92,1152.47l4.97,9.81-26.75,13.57-4.98-9.81Z"/>
+    <path id="M63-L7" class="cls-2" d="M1336.89,1162.28l4.98,9.81-26.76,13.57-4.97-9.81Z"/>
+    <path id="M63-L8" class="cls-2" d="M1341.87,1172.09l4.52,8.92-26.76,13.57-4.52-8.92Z"/>
+    <path id="M63-L9" class="cls-2" d="M1346.39,1181.01l4.98,9.81-26.76,13.57-4.98-9.81Z"/>
+    <path id="M63-L10" class="cls-2" d="M1351.37,1190.82l4.97,9.81-26.76,13.57-4.97-9.81Z"/>
+    <path id="M63-L11" class="cls-2" d="M1356.34,1200.63l4.98,9.81-26.76,13.57-4.98-9.81Z"/>
+    <path id="M63-L12" class="cls-2" d="M1361.32,1210.44l4.97,9.81-26.75,13.57-4.98-9.81Z"/>
+    <path id="M63-L13" class="cls-2" d="M1366.29,1220.25l4.98,9.81-26.76,13.57-4.97-9.81Z"/>
+    <path id="M63-L14" class="cls-2" d="M1371.27,1230.06l4.07,8.03-26.76,13.57-4.07-8.03Z"/>
+    <path id="M63-L15" class="cls-2" d="M1375.34,1238.09l5.42,10.7-26.75,13.57-5.43-10.7Z"/>
+    <path id="M63-L16" class="cls-2" d="M1380.76,1248.79l4.98,9.81-26.76,13.57-4.97-9.81Z"/>
+    <path id="M63-L17" class="cls-2" d="M1385.74,1258.6l4.98,9.81-26.76,13.57-4.98-9.81Z"/>
+    <path id="M63-L18" class="cls-2" d="M1390.72,1268.41l4.97,9.81-26.76,13.57-4.97-9.81Z"/>
+    <path id="M63-L19" class="cls-2" d="M1395.69,1278.22l4.98,9.81-26.76,13.57-4.98-9.81Z"/>
+    <path id="M63-L20" class="cls-2" d="M1400.67,1288.03l4.52,8.92-26.76,13.57-4.52-8.92Z"/>
+    <path id="M63-L21" class="cls-2" d="M1405.19,1296.95l3.62,7.14-1.32,4.03-21.41,10.86-4.48-2.21-3.17-6.25Z"/>
+    <path id="M63-2" data-name="M63" class="cls-2" d="M1308.85,1106.99l99.96,197.1-1.32,4.03-21.41,10.86-4.48-2.21-104.93-206.92,1.32-4.03,13.37-6.79,17.04,7.06Z"/>
+  </g>

@@ -19,9 +19,9 @@
     <a class="navbar-logo" href="#">
         <img src="https://download-accl.zoho.com/v1/docs/prv/i8756b24e8c232e0c4decb5911f28b49469b0?_t=1630356068833" >
     </a>
-    <button id="btn-login" class="btn-login">Iniciar Sesión</button>
     
-    
+    <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+    <h3 id="usuario" style="color: #fff">Hola: </h3>
 </nav>
 <header>
     <img class="logo" src="https://download-accl.zoho.com/v1/docs/prv/mmwg62f4810a4ff7d493eb0a23262d1fb287b?_t=1630362401369">
@@ -118,8 +118,8 @@
   <div class="button-box">
       <div id="popup-login-close" class="popup-close-login">×</div>
       <div id="btn"></div>
-      <button id="btn-iniciar" type="button" class="toggle-btn">Iniciar Sesión</button>
-      <button id="btn-registrar" type="button" class="toggle-btn">Registrar</button>
+      <button type="button" class="toggle-btn" onclick="inicio()">Iniciar Sesión</button>
+      <button type="button" class="toggle-btn" onclick="registro()">Registrar</button>
   </div>
   <form  id="login" class="input-group">
       <input id="correo" type="email" class="input-field" placeholder="Correo electrónico" required>
@@ -180,7 +180,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="./js/login.js" type="module"></script>
+    <script src="./js/login.js"></script>
     <script src="./js/navegacion.js"></script>
     <script src="./js/loader.js"></script>
 </body>

@@ -1,8 +1,11 @@
 // import  * as alertas  from "./alertas.js";
 import { openLoginForm } from "./alertas.js";
+import { AbrirLoginForm } from "./login.js";
 // const btnGetDesarrollo = document.querySelector('#get-desarrollo');
 // const getDesarrollo = document.querySelector('#nombre-desarrollo');
 // console.log(getDesarrollo.innerHTML);
+const correoUsuario = "fernandaciprian31@gmail.com";
+const contra = "123456";
 
 let posicionY = 0;
 let posicionX = 0;
@@ -48,7 +51,6 @@ mapa.addEventListener('click', (e) => {
     const fraccionamiento = e.target.closest('svg').dataset.desarrollo
     console.log(fraccionamiento, manzana)
     loadManzana(fraccionamiento, manzana)
-    // console.log()
   }
 })
 
@@ -57,12 +59,19 @@ mapa.addEventListener('click', (e) => {
   const info = document.querySelector('.info-apartado')
   let posicionModal = e.pageY;
   const modal = document.getElementById('modal');
+  // const login = document.getElementsByClassName('popup-login');
   if (e.target.matches('[data-lote]')) {
     console.log(`${desarrollo} ${e.target.id}`)
-    console.log(`posicion:  ${posicionModal}`);
-    modal.style.top = posicionModal + 'px';
-    openLoginForm();
-    info.innerHTML = desarrollo + " " +e.target.id;
+    // console.log(`posicion:  ${posicionModal}`);
+    if(sessionStorage.getItem("correo") == correoUsuario && sessionStorage.getItem("contrase_a") == contra){
+      modal.style.top = posicionModal + 'px';
+      openLoginForm();
+      info.innerHTML = desarrollo + " " +e.target.id;
+    }
+    else{
+      AbrirLoginForm();
+    }
+    
   }
 })
 

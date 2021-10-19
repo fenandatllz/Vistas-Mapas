@@ -157,8 +157,8 @@
       <div class="button-box">
           <div id="popup-login-close" class="popup-close-login">×</div>
           <div id="btn"></div>
-          <button type="button" class="toggle-btn" onclick="inicio()">Iniciar Sesión</button>
-          <button type="button" class="toggle-btn" onclick="registro()">Registrar</button>
+          <button id="btn-iniciar" type="button" class="toggle-btn">Iniciar Sesión</button>
+          <button id="btn-registrar" type="button" class="toggle-btn">Registrar</button>
       </div>
       <form  id="login" class="input-group">
           <input type="email" class="input-field" placeholder="Correo electrónico" required>
@@ -226,7 +226,7 @@
     <script src="./js/navegacion.js"></script>
     <script src="./js/loader.js"></script>
     <script src="./js/mapas.js" type="module" ></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/login.js" type="module"></script>
     <script>
         function MostrarDiv(checkEnganche) {
         var dvEnganche = document.getElementById("mostrarEnganche");

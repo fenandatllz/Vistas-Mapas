@@ -1,0 +1,42 @@
+<svg id="Nombres" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      #Nombres{
+        background: black;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.96px;
+      }
+      .cls-2:hover{
+        fill: red;
+      }
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #de9f27;
+        stroke: #cbbf37;
+        stroke-width: 0.88px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#de9f27"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="M46" class="cls-1">
+    <path id="M46-2" data-name="M46" class="cls-2" d="M1580.86,853.961l0.44,111,75.95,9.383-32.49-100.165-1.99-3.01Z"/>
+  </g>

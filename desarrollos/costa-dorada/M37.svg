@@ -1,0 +1,58 @@
+<svg id="Nombres" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      #Nombres{
+        background: black;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.96px;
+      }
+      .cls-2:hover{
+        fill: red;
+      }
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #de9f27;
+        stroke: #cbbf37;
+        stroke-width: 0.88px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#de9f27"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="M37" class="cls-1">
+    <path id="M37-L1" class="cls-2" d="M698.15,749.551l3.618,7.135-26.756,13.569-4.975-9.811L695.01,747.78l2.688,0.879Z"/>
+    <path id="M37-L2" class="cls-2" d="M701.768,756.686l4.976,9.81-26.756,13.569-4.976-9.81Z"/>
+    <path id="M37-L3" class="cls-2" d="M706.744,766.5l4.975,9.811-26.756,13.569-4.975-9.811Z"/>
+    <path id="M37-L4" class="cls-2" d="M711.719,776.307l4.975,9.81-26.756,13.569-4.975-9.81Z"/>
+    <path id="M37-L5" class="cls-2" d="M716.694,786.117l4.975,9.811L694.913,809.5l-4.975-9.811Z"/>
+    <path id="M37-L6" class="cls-2" d="M721.669,795.928l4.976,9.811-26.757,13.568-4.975-9.81Z"/>
+    <path id="M37-L7" class="cls-2" d="M726.645,805.739l4.07,8.026L711.648,842.5l-11.76-23.189Z"/>
+    <path id="M37-L8" class="cls-2" d="M711.648,842.5l-16.856,24.246-3.128.465-2.689-.88-6.784-13.377,27.648-14.022Z"/>
+    <path id="M37-L9" class="cls-2" d="M709.839,838.928l-4.975-9.81-27.648,14.021,4.975,9.811Z"/>
+    <path id="M37-L10" class="cls-2" d="M704.864,829.118l-4.976-9.811L672.24,833.328l4.976,9.811Z"/>
+    <path id="M37-L11" class="cls-2" d="M699.888,819.307l-4.975-9.81-27.648,14.021,4.975,9.81Z"/>
+    <path id="M37-L12" class="cls-2" d="M694.913,809.5l-4.975-9.811L662.29,813.707l4.975,9.811Z"/>
+    <path id="M37-L13" class="cls-2" d="M689.938,799.686l-4.975-9.81L657.315,803.9l4.975,9.81Z"/>
+    <path id="M37-L14" class="cls-2" d="M684.963,789.876l-4.975-9.811L652.34,794.086l4.975,9.811Z"/>
+    <path id="M37-L15" class="cls-2" d="M679.988,780.065l-4.976-9.81-27.648,14.021,4.976,9.81Z"/>
+    <path id="M37-L16" class="cls-2" d="M675.012,770.255l-4.975-9.811-24.972,12.664-1.319,4.033,3.618,7.135Z"/>
+    <path id="M37-2" data-name="M37" class="cls-2" d="M698.15,749.551l32.565,64.214L711.648,842.5l-15.965,23.793-3.567,1.81-3.141-1.772-45.229-89.186,1.319-4.033L695.01,747.78l2.688,0.879Z"/>
+  </g>

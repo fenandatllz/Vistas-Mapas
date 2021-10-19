@@ -1,0 +1,63 @@
+<svg id="Nombres" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      #Nombres{
+        background: black;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.96px;
+      }
+      .cls-2:hover{
+        fill: red;
+      }
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #de9f27;
+        stroke: #cbbf37;
+        stroke-width: 0.88px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#de9f27"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="M21" class="cls-1">
+    <path id="M21-L1" class="cls-2" d="M899.627,317.731l4.523,8.919-18.729,9.5-7.689-15.162,15.162-7.689,5.376,1.759Z"/>
+    <path id="M21-L2" class="cls-2" d="M904.15,326.65l4.523,8.919-26.756,13.569-4.523-8.919Z"/>
+    <path id="M21-L3" class="cls-2" d="M908.673,335.569l4.975,9.81-26.756,13.569-4.975-9.81Z"/>
+    <path id="M21-L4" class="cls-2" d="M913.648,345.379l4.523,8.919-26.756,13.569-4.523-8.919Z"/>
+    <path id="M21-L5" class="cls-2" d="M918.171,354.3l4.975,9.811L896.39,377.677l-4.975-9.81L918.171,354.3"/>
+    <path id="M21-L6" class="cls-2" d="M923.146,364.109l4.976,9.81-26.756,13.569-4.976-9.811Z"/>
+    <path id="M21-L7" class="cls-2" d="M928.122,373.919l4.975,9.811L906.341,397.3l-4.975-9.811Z"/>
+    <path id="M21-L8" class="cls-2" d="M933.1,383.73l4.523,8.918-26.756,13.569-4.523-8.918Z"/>
+    <path id="M21-L9" class="cls-2" d="M937.62,392.648l4.975,9.811-26.756,13.569-4.975-9.811Z"/>
+    <path id="M21-L10" class="cls-2" d="M942.6,402.459l4.071,8.027-0.879,2.688-1.332,1.8L921.267,426.73l-5.428-10.7Z"/>
+    <path id="M21-L11" class="cls-2" d="M921.267,426.73l-24.081,12.212-3.58-.427-1.344-.439-4.071-8.027,27.648-14.021Z"/>
+    <path id="M21-L12" class="cls-2" d="M915.839,416.028l-4.975-9.811-27.648,14.021,4.975,9.811Z"/>
+    <path id="M21-L13" class="cls-2" d="M910.864,406.217l-4.523-8.918L878.693,411.32l4.523,8.918Z"/>
+    <path id="M21-L14" class="cls-2" d="M906.341,397.3l-4.975-9.811-27.648,14.021,4.975,9.811Z"/>
+    <path id="M21-L15" class="cls-2" d="M901.366,387.488l-4.976-9.811L868.742,391.7l4.976,9.811Z"/>
+    <path id="M21-L16" class="cls-2" d="M896.39,377.677l-4.975-9.81-27.648,14.021,4.975,9.81Z"/>
+    <path id="M21-L17" class="cls-2" d="M891.415,367.867l-4.523-8.919-27.648,14.021,4.523,8.919Z"/>
+    <path id="M21-L18" class="cls-2" d="M886.892,358.948l-4.975-9.81-27.648,14.021,4.975,9.81Z"/>
+    <path id="M21-L19" class="cls-2" d="M881.917,349.138l-4.523-8.919L849.746,354.24l4.523,8.919Z"/>
+    <path id="M21-L20" class="cls-2" d="M877.732,320.986l7.689,15.162-15.162,7.689-7.689-15.162Z"/>
+    <path id="M21-L21" class="cls-2" d="M870.259,343.837l-7.689-15.162-17.837,9.046-0.879,2.689,0.012,2.236,0.9,1.783,4.975,9.811Z"/>
+    <path id="M21-2" data-name="M21" class="cls-2" d="M898.723,315.948l47.943,94.538-2.211,4.485-47.269,23.971-4.924-.866-48.4-95.43,0.867-4.925L892.894,313.3Z"/>
+  </g>

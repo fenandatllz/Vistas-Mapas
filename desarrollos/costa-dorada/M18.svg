@@ -1,0 +1,62 @@
+<svg id="Nombres" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      #Nombres{
+        background: black;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.96px;
+      }
+      .cls-2:hover{
+        fill: red;
+      }
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+
+      .cls-4, .cls-6 {
+        fill: #de9f27;
+        stroke: #cbbf37;
+        stroke-width: 0.88px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#de9f27"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="M18" class="cls-1">
+    <path id="M18-L1" class="cls-2" d="M682.89,425.4l6.332,12.487-25.864,13.116-7.237-14.27,22.3-11.307,2.236-.013Z"/>
+    <path id="M18-L2" class="cls-2" d="M689.222,437.889l4.976,9.81-25.865,13.117-4.975-9.811Z"/>
+    <path id="M18-L3" class="cls-2" d="M694.2,447.7l4.522,8.919-25.864,13.116-4.523-8.918Z"/>
+    <path id="M18-L4" class="cls-2" d="M698.72,456.618l5.428,10.7-25.864,13.117-5.428-10.7Z"/>
+    <path id="M18-L5" class="cls-2" d="M704.148,467.32l4.523,8.919-25.864,13.116-4.523-8.918Z"/>
+    <path id="M18-L6" class="cls-2" d="M708.671,476.239l4.975,9.811-25.864,13.116-4.975-9.811Z"/>
+    <path id="M18-L7" class="cls-2" d="M713.646,486.05l4.975,9.81-25.864,13.117-4.975-9.811Z"/>
+    <path id="M18-L8" class="cls-2" d="M718.621,495.86l4.523,8.919L697.28,517.9l-4.523-8.918Z"/>
+    <path id="M18-L9" class="cls-2" d="M723.144,504.779l4.523,8.919L701.8,526.814,697.28,517.9Z"/>
+    <path id="M18-L10" class="cls-2" d="M727.667,513.7l4.071,8.026-1.319,4.033-23.188,11.759-5.428-10.7Z"/>
+    <path id="M18-L11" class="cls-2" d="M707.231,537.516l-24.973,12.665-3.58-.427-4.523-8.919L701.8,526.814Z"/>
+    <path id="M18-L12" class="cls-2" d="M701.8,526.814l-4.071-8.027-27.648,14.021,4.071,8.027Z"/>
+    <path id="M18-L13" class="cls-2" d="M697.732,518.787l-4.975-9.81L665.109,523l4.975,9.81Z"/>
+    <path id="M18-L14" class="cls-2" d="M692.757,508.977l-4.975-9.811-27.648,14.021L665.109,523Z"/>
+    <path id="M18-L15" class="cls-2" d="M687.782,499.166l-4.975-9.811-27.648,14.022,4.975,9.81Z"/>
+    <path id="M18-L16" class="cls-2" d="M682.807,489.355l-4.523-8.918-27.648,14.021,4.523,8.919Z"/>
+    <path id="M18-L17" class="cls-2" d="M678.284,480.437l-5.428-10.7-27.648,14.021,5.428,10.7Z"/>
+    <path id="M18-L18" class="cls-2" d="M672.856,469.734l-4.523-8.918-27.648,14.021,4.523,8.918Z"/>
+    <path id="M18-L19" class="cls-2" d="M668.333,460.816l-4.975-9.811L635.71,465.026l4.975,9.811Z"/>
+    <path id="M18-L20" class="cls-2" d="M663.358,451.005l-7.237-14.27-16.053,8.141-1.746,7.613-3.542,6.281-0.427,3.58,1.357,2.676Z"/>
+    <path id="M18-2" data-name="M18" class="cls-2" d="M683.343,426.294l48.4,95.43-1.319,4.033-48.161,24.424-3.58-.427-44.325-87.4,5.715-17.474,38.35-19.448Z"/>
+  </g>
