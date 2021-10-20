@@ -33,8 +33,11 @@ let zoom = 1;
 			$('.target').css('transform', 'scale(' + zoom + ')');
 		});
 		$('.zoom-out').on('click', function(){
-			zoom -= 0.1;
-			$('.target').css('transform', 'scale(' + zoom + ')');
+            if(zoom != 1){
+                zoom -= 0.1;
+                $('.target').css('transform', 'scale(' + zoom + ')');
+            }
+			
 		});
 
 // Carrusel

@@ -239,15 +239,22 @@ footer i{
 }
 .mapa-interactivo{
     width: auto;
-    height: auto;
+    height: 95vh;
     overflow-x: auto;
+    overflow-y: y;
     border-radius: 11px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     background-color: #fff;
     padding: 3px;
     margin-top: 15px;
 }
-.btnz {
+.zoom-flex{
+    height: 70px;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+}
+ .btnz {
     width: 5rem;
     height: 5rem;
     background: #de9f27;
@@ -255,37 +262,28 @@ footer i{
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    color: #000;
+    position: relative;
+    color: #fff;
     padding: 15px 10px 5px;
-    position: fixed;
-    text-align: center;
+     text-align: center;
     -ms-user-select: none;
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
     transition: all 0.3s ease;
-    z-index: 1;
+    bottom: 670px;
+    margin-right: 40px;
+    
   }
-  .btnz i{
+   .btnz i{
       font-size: large;
-  }
+  } 
   .btnz:hover {
-    background: #000;
+    background: #f3f3f3;
     color: #de9f27;
     border-color: #de9f27;
     cursor: pointer;
-  }
-  
-  .zoom {
-    bottom: 190px;
-  }
-  
-  .zoom-out {
-    bottom: 120px;
-  }
-  .zoom-init {
-    bottom: 50px;
   }
 
 /* Hover img */
