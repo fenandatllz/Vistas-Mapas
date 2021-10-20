@@ -4,12 +4,14 @@ const c = document.getElementById('btn');
 const closeLogin = document.getElementById('popup-login-close');
 const login = document.querySelector('.btn-login');
 const logout = document.querySelector('#btn-logout');
-const iniciarSesion = document.querySelector('#iniciar-sesion');
+let iniciarSesion = document.querySelector('#iniciar-sesion');
 const btnIniciar = document.getElementById('btn-iniciar');
 const btnRegistrar = document.getElementById('btn-registrar');
+// let registrarUsuario = document.getElementById('registrar-usuario');
 
 iniciarSesion.addEventListener('click',()=>{
     iniciar();
+    botonLog();
 })
 
 
@@ -24,9 +26,6 @@ function iniciar(){
     // alert(localStorage.getItem("correo") +"\n" + localStorage.getItem("contra"));
 }
 
-// logout.addEventListener('click',()=>{
-
-// })
 
 btnIniciar.addEventListener('click', () => {
     inicio();
@@ -61,4 +60,23 @@ closeLogin.addEventListener('click', ()=>{
 login.addEventListener('click',()=>{
     AbrirLoginForm();
 })
+
+function botonLog(){
+    if (login.style.display ==  "none"){
+        login.style.display = "block";
+    }
+    else{
+        login.style.display = "none";
+    }
+}
+
+function botonL(){
+    if (logout.style.display ==  "none"){
+        logout.style.display = "block";
+    }
+    else{
+        logout.style.display = "none";
+    }
+}
+
 

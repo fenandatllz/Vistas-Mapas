@@ -16,6 +16,12 @@ $(document).ready(function(){
 	});
 
 });
+//DivEnganche
+        function MostrarDiv(checkEnganche) {
+        let dvEnganche = document.getElementById("mostrarEnganche");
+        dvEnganche.style.display = checkEnganche.checked ? "block" : "none";
+    }
+    
 
 // Carrusel
 if(document.querySelector('#container-slider')){

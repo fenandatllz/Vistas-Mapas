@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/load.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Detalles Fraccionamiento</title>
@@ -18,6 +19,7 @@
         <a class="navbar-logo" href="index.html">
             <img src="https://download-accl.zoho.com/v1/docs/prv/i8756b24e8c232e0c4decb5911f28b49469b0?_t=1630356068833" >
         </a>
+        <button id="btn-login" class="btn-login">Iniciar Sesión</button>
     </nav>
 <header class="portada">
     <div id="container-slider">
@@ -41,7 +43,7 @@
 <main class="contenedor">
     <div class="descripcion">
         <article>
-            <h1>Costa Dorada</h1>
+            <h1 id="nombre-desarrollo">Costa Dorada</h1>
             <div class="division-detalle "></div>
                 <p class="parrafo-descripcion">Costa Dorada es uno de nuestros desarrollos que cuenta con todos los servicios necesarios para ser habitado.
                   Se ubica en una zona estratégica, con fácil acceso a cualquiera de nuestras ciudades vecinas: Tijuana, Rosarito y San Diego.
@@ -79,7 +81,7 @@
     </main>
 
     <div class="contenedor-mapa">
-        <div class=contenedor-select> 
+        <!-- <div class=contenedor-select> 
             <select id="desarrollo" name="secciones" class="secciones">
               <option disabled selected> Seleccionar Sección </option>
               <option>Costa Dorada "Elite"</option>
@@ -87,11 +89,103 @@
               <option>Costa Dorada "Perla"</option>
             </select>
             <button id="get-desarrollo" class="seleccion-btn">Escoger desarrollo</button>
-        </div>
-        <div  id="mapa-interactivo" class="mapa-interactivo">
-        
-        </div>
+        </div> -->
+        <div  id="mapa-interactivo" class="mapa-interactivo"> </div>
     </div>
+    <div id="info-lote" class="burbuja"> </div>
+    <!-- MODAL PAGO DE APARTADO -->
+<div class="popup-overlay"></div>
+<div id="modal"class="popup">
+    <div id="popup-apartado-close" class="popup-close" >×</div>
+        <form class="form">
+            <div class="header">
+                Introduzca Datos del Contacto
+                <div class="division-modal"></div>
+            </div>
+            <div class="element">
+                <span class="info-apartado"> </span>
+            </div>
+            <div class="element">
+                <label>¿Desea dar un enganche?</label>
+                <input type="checkbox" id="checkEnganche" onclick="MostrarDiv(this)">
+            </div>
+            <div class="element" id="mostrarEnganche" style="display: none;">
+                <select name="monto-enganche" id="monto-enganche">
+                    <option value="0" disabled selected> Seleccione Monto de Enganche </option>
+                    <option value="1" >$ 100.00 DLLS</option>
+                    <option value="2" >$ 200.00 DLLS</option>
+                    <option value="3" >$ 300.00 DLLS</option>
+                    <option value="4" >$ 400.00 DLLS</option>
+                </select>
+            </div>
+            <div class="element"> 
+                <select name="monto-pago" id="monto-pago" >
+                    <option value="0" disabled selected> Seleccione Monto de Apartado </option>
+                    <option value="1" >$ 50.00 DLLS</option>
+                    <option value="2" >$ 100.00 DLLS</option>
+                    <option value="3" >$ 150.00 DLLS</option>
+                    <option value="4" >$ 200.00 DLLS</option>
+                </select>
+            </div>              
+                <div class="element">                          
+                    <button type="submit" id="btn-enviar" class="enviar">Enviar</button>
+                </div>
+                <div class="element">
+                    <button type="submit" id="btn-cancelar" class="cancelar">Cancelar</button>
+                </div>
+        </form>
+</div>
+ <!-- Alertas -->
+ <div class="wrapper">
+    <div id="toast" class ="success">
+        <div class="container-1">
+            <i class="fas fa-check-square"></i>
+        </div>
+        <div class="container-2">
+            <p>Apartado Exitoso</p>
+            <p>Apartado Realizado Con Exito.</p>
+        </div>
+        <button id="close" >&times;</button>
+    </div>
+    <div id="toast2" class="error">
+        <div class="container-1">
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="container-2">
+            <p>Apartado Sin Exito</p>
+            <p>Apartado Realizado Sin Exito.</p>
+        </div>
+        <button id="close-sin-exito">&times;</button>
+    </div>
+</div>
+<!-- Fin xD -->
+<!-- LOGIN -->
+<div class="popup-overlay-login"></div>
+<div class="popup-login">
+  <div class="button-box">
+      <div id="popup-login-close" class="popup-close-login">×</div>
+      <div id="btn"></div>
+      <button id="btn-iniciar" type="button" class="toggle-btn">Iniciar Sesión</button>
+      <button id="btn-registrar" type="button" class="toggle-btn">Registrar</button>
+  </div>
+  <form  id="login" class="input-group">
+      <input id="correo" type="email" class="input-field" placeholder="Correo electrónico" required>
+      <input id="contrase_a" type="password" class="input-field" placeholder="Contraseña" required>
+      <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span>
+      <button type="submit" class="submit-btn" id="iniciar-sesion">Iniciar Sesión</button>
+  </form>
+  <form id="registro" class="input-group">
+      <input type="text" class="input-field" placeholder="Nombre(s)" required>
+      <input type="text" class="input-field" placeholder="Apellidos" required>
+      <input type="tel" class="input-field" placeholder="Telefono" required>
+      <input type="email" class="input-field" placeholder="Correo Electrónico" required>
+      <input type="password" class="input-field" placeholder="Contraseña" required>
+      <input type="password" class="input-field" placeholder="Confirmar Contraseña" required>
+      <input type="checkbox" id="check-registro" class="checkbox"><span>Acepto los terminos y condiciones</span>
+      <button type="submit" class="submit-btn">Registrar</button>
+  </form>
+</div>
+<!-- </div> -->
     <!-- Flecha navegacion arriba -->
     <span class="arriba">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#DE9F27" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -136,5 +230,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="./js/navegacion.js"></script>
     <script src="./js/loader.js"></script>
+    <script src="./js/mapas.js" type="module"></script>
+    <script src="./js/alertas.js" type="module"></script>
 </body>
 </html>
