@@ -1,35 +1,7 @@
-<svg id="Manzana 2" data-desarrollo="costa-dorada" data-name="Manzana 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="1890" height="1417" viewBox="0 0 1890 1417">
+<svg class="target" id="Manzana 2" data-desarrollo="costa-dorada" data-name="Manzana 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="1890" height="1417" viewBox="0 0 1890 1417">
   <defs>
     <style>
-      #Nombres{
-        background: black;
-      }
-
-      .cls-1 {
-        filter: url(#filter);
-      }
-
-      .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-width: 1.96px;
-      }
-      .cls-2:hover{
-        fill: red;
-      }
-      .cls-2, .cls-3, .cls-4, .cls-5 {
-        fill-rule: evenodd;
-      }
-
-      .cls-3 {
-        fill: #010101;
-      }
-
-      .cls-4, .cls-6 {
-        fill: #de9f27;
-        stroke: #cbbf37;
-        stroke-width: 0.88px;
-      }
+      @import url(./css/mapas.css);
     </style>
     <filter id="filter" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#de9f27"/>
