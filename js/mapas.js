@@ -60,7 +60,9 @@ mapa.addEventListener('click', (e) => {
   const info = document.querySelector('.info-apartado')
   let posicionModal = e.pageY;
   const modal = document.getElementById('modal');
-  // const login = document.getElementsByClassName('popup-login');
+  const modalLogin = document.getElementById('modal-login');
+
+
   if (e.target.matches('[data-lote]')) {
     console.log(`${desarrollo} ${e.target.id}`)
     // console.log(`posicion:  ${posicionModal}`);
@@ -70,6 +72,7 @@ mapa.addEventListener('click', (e) => {
       info.innerHTML = desarrollo + " " +e.target.id;
     }
     else{
+      modalLogin.style.top = posicionModal + 'px';
       AbrirLoginForm();
     }
     
