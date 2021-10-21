@@ -1,35 +1,7 @@
-<svg id="Manzana 41" data-desarrollo="costa-dorada" data-name="Manzana 41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+<svg class="target" id="Manzana 41" data-desarrollo="costa-dorada" data-name="Manzana 41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
   <defs>
     <style>
-      #Nombres{
-        background: black;
-      }
-
-      .cls-1 {
-        filter: url(#filter);
-      }
-
-      .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-width: 1.96px;
-      }
-      .cls-2:hover{
-        fill: red;
-      }
-      .cls-2, .cls-3, .cls-4, .cls-5 {
-        fill-rule: evenodd;
-      }
-
-      .cls-3 {
-        fill: #010101;
-      }
-
-      .cls-4, .cls-6 {
-        fill: #de9f27;
-        stroke: #cbbf37;
-        stroke-width: 0.88px;
-      }
+     @import url(./css/mapas.css);
     </style>
     <filter id="filter" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#de9f27"/>
@@ -37,7 +9,7 @@
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="M41" class="cls-1">
+  <g id="map" pointer-events="all" class="cls-1">
     <path id="M41-L1" class="cls-2" d="M899.814,665.221l6.333,12.486L879.39,691.276l-4.975-9.811,17.334-18.882,1.784-.9Z"/>
     <path id="M41-L2" class="cls-2" d="M906.147,677.707l4.975,9.811-26.756,13.568-4.976-9.81Z"/>
     <path id="M41-L3" class="cls-2" d="M911.122,687.518l4.975,9.81L889.341,710.9l-4.975-9.811Z"/>
