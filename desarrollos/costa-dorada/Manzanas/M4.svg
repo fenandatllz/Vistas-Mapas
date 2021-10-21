@@ -1,35 +1,7 @@
-<svg id="Manzana 4" data-desarrollo="costa-dorada" data-name="Manzana 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+<svg class="target" id="Manzana 4" data-desarrollo="costa-dorada" data-name="Manzana 4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
   <defs>
     <style>
-      #Nombres{
-        background: black;
-      }
-
-      .cls-1 { 
-        filter: url(#filter);
-      }
-
-      .cls-2 {
-        fill: none;
-        stroke: #000;
-        stroke-width: 1.96px;
-      }
-      .cls-2:hover{
-        fill: red;
-      }
-      .cls-2, .cls-3, .cls-4, .cls-5 {
-        fill-rule: evenodd;
-      }
-
-      .cls-3 {
-        fill: #010101;
-      }
-
-      .cls-4, .cls-6 {
-        fill: #de9f27;
-        stroke: #cbbf37;
-        stroke-width: 0.88px;
-      }
+      @import url(./css/mapas.css);
     </style>
     <filter id="filter" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#de9f27"/>
@@ -37,7 +9,7 @@
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="M4" class="cls-1" id="map" pointer-events="all">
+  <g class="cls-1" id="map" pointer-events="all">
     <path data-lote data-costototal='10000' data-dimension='100' data-costom2='100' id="M4-L1" class="cls-2" d="M403.172,232.005l5.428,10.7-26.757,13.569L373.7,240.222l29.018-9.109Z"/>
     <path id="M4-L2" class="cls-2" d="M408.6,242.707l4.522,8.919L386.366,265.2l-4.523-8.919Z"/>
     <path data-lote data-costototal='10000' data-dimension='100' data-costom2='100' id="M4-L3" class="cls-2" d="M413.122,251.626l4.523,8.919-26.756,13.568-4.523-8.918Z"/>
