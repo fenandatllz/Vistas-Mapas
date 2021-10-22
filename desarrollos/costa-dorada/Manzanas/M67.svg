@@ -9,7 +9,7 @@
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="map" pointer-events="all" id="M67" class="cls-1">
+  <g id="map" pointer-events="all" class="cls-1">
     <path id="M67" data-name="M67" class="cls-2" d="M1585.35,1023.97l-4.02,3.98-0.02,3,4.96,8.02,55.46,107.28s14.98,29.3,16.85,30.09,5,0.02,5,.02l5.02-2.97s49.48-24.44,50.14-27.75a5.694,5.694,0,0,0-.98-5l-13.79-41.07s-19.27-59.26-20.69-61.11a12.115,12.115,0,0,0-3.99-3.02l-7.99-1.04Z"/>
   </g>
   <g class="cls-1">
