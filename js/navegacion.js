@@ -26,16 +26,16 @@ let zoom = 1;
 		
 		$('.zoom').on('click', function(){
 			zoom += 0.1;
-			$('.target').css('transform', 'scale(' + zoom + ')');
+			$('.target-zoom').css('transform', 'scale(' + zoom + ')');
 		});
 		$('.zoom-init').on('click', function(){
 			zoom = 1;
-			$('.target').css('transform', 'scale(' + zoom + ')');
+			$('.target-zoom').css('transform', 'scale(' + zoom + ')');
 		});
 		$('.zoom-out').on('click', function(){
             if(zoom != 1){
                 zoom -= 0.1;
-                $('.target').css('transform', 'scale(' + zoom + ')');
+                $('.target-zoom').css('transform', 'scale(' + zoom + ')');
             }
 			
 		});

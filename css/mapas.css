@@ -1,3 +1,8 @@
+svg:not(#navegacion){
+  width: 2400;
+  height: 1900;
+}
+
 .cls-1 {
     filter: url(#filter);
   }
