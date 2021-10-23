@@ -2,18 +2,22 @@ const a = document.getElementById('login');
 const b = document.getElementById('registro');
 const c = document.getElementById('btn');
 const closeLogin = document.getElementById('popup-login-close');
-const login = document.querySelector('.btn-login');
-const logout = document.querySelector('#btn-logout');
-let iniciarSesion = document.querySelector('#iniciar-sesion');
-const btnIniciar = document.getElementById('btn-iniciar');
-const btnRegistrar = document.getElementById('btn-registrar');
-// let registrarUsuario = document.getElementById('registrar-usuario');
+//--botones
+const login = document.querySelector('.btn-login');//iniciar sesion index
+// const btnLogout = document.querySelector('.btn-logout');// cerrar sesion index
+
+let iniciarSesion = document.querySelector('#iniciar-sesion');// boton iniciar sesion en formulario
+const btnIniciar = document.getElementById('btn-iniciar'); // iniciar sesion formulario (arriba)
+const btnRegistrar = document.getElementById('btn-registrar');// registrar formulario
+
 
 iniciarSesion.addEventListener('click',()=>{
     iniciar();
-    botonLog();
 })
 
+// btnLogout.addEventListener('click', ()=>{
+//     logout();
+// })
 
 function iniciar(){
 
@@ -21,9 +25,14 @@ function iniciar(){
     sessionStorage.setItem("correo", document.getElementById('correo').value)
     sessionStorage.setItem("contrase_a", document.getElementById('contrase_a').value)
     sessionStorage.setItem("sesion", true)
-    document.getElementById('usuario').innerHTML = "Bienvenido(a): " + sessionStorage.getItem("user");
+    // btnLogout.style.display = "flex";
+    
+    
 
     // alert(localStorage.getItem("correo") +"\n" + localStorage.getItem("contra"));
+}
+function logout(){
+    sessionStorage.clear();
 }
 
 
@@ -60,23 +69,5 @@ closeLogin.addEventListener('click', ()=>{
 login.addEventListener('click',()=>{
     AbrirLoginForm();
 })
-
-function botonLog(){
-    if (login.style.display ==  "none"){
-        login.style.display = "block";
-    }
-    else{
-        login.style.display = "none";
-    }
-}
-
-function botonL(){
-    if (logout.style.display ==  "none"){
-        logout.style.display = "block";
-    }
-    else{
-        logout.style.display = "none";
-    }
-}
 
 

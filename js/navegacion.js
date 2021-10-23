@@ -26,19 +26,23 @@ let zoom = 1;
 		
 		$('.zoom').on('click', function(){
 			zoom += 0.1;
-			$('.target-zoom').css('transform', 'scale(' + zoom + ')');
+			$('.target').css('transform', 'scale(' + zoom + ')');
 		});
 		$('.zoom-init').on('click', function(){
 			zoom = 1;
-			$('.target-zoom').css('transform', 'scale(' + zoom + ')');
+			$('.target').css('transform', 'scale(' + zoom + ')');
 		});
 		$('.zoom-out').on('click', function(){
             if(zoom != 1){
                 zoom -= 0.1;
-                $('.target-zoom').css('transform', 'scale(' + zoom + ')');
-            }
-			
+                $('.target').css('transform', 'scale(' + zoom + ')');
+            }	
 		});
+        
+// currWidth = 2400;
+// $('.zoom').on('click', function(){
+//     svg.style.width = (currWidth + 100) + "px"
+// })
 
 // Carrusel
 if(document.querySelector('#container-slider')){
