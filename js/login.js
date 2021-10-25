@@ -9,7 +9,20 @@ const btnLogout = document.querySelector('.btn-logout');// cerrar sesion index
 let iniciarSesion = document.querySelector('#iniciar-sesion');// boton iniciar sesion en formulario
 const btnIniciar = document.getElementById('btn-iniciar'); // iniciar sesion formulario (arriba)
 const btnRegistrar = document.getElementById('btn-registrar');// registrar formulario
+let sesion = sessionStorage.getItem("sesion");
 
+function MostrarBtnLogout() {
+
+    btnLogout.style.display = sesion ? "block" : "none";
+    login.style.display = sesion ? "none" : "block";
+}
+
+function MostrarBtnLogin(){
+
+    login.style.display = sesion ? "block" : "none";
+    btnLogout.style.display = sesion ? "none" : "block";
+
+}
 
 iniciarSesion.addEventListener('click',()=>{
     iniciar();
@@ -17,7 +30,9 @@ iniciarSesion.addEventListener('click',()=>{
 
 btnLogout.addEventListener('click', ()=>{
     logout();
+    MostrarBtnLogin();
 })
+
 
 function iniciar(){
 
@@ -26,9 +41,6 @@ function iniciar(){
     sessionStorage.setItem("contrase_a", document.getElementById('contrase_a').value)
     sessionStorage.setItem("sesion", true)
     // btnLogout.style.display = "flex";
-    
-    
-
     // alert(localStorage.getItem("correo") +"\n" + localStorage.getItem("contra"));
 }
 function logout(){
@@ -67,7 +79,9 @@ closeLogin.addEventListener('click', ()=>{
     CerrarLoginForm();
 })
 login.addEventListener('click',()=>{
-    AbrirLoginForm();
+    //AbrirLoginForm();
+    MostrarBtnLogout();
 })
+
 
 

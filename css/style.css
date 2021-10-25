@@ -1,7 +1,11 @@
 /* General */
-*{
-    margin: 0;
+html {
     box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     width: 100vw;
@@ -10,7 +14,7 @@ body {
 }
 
 header{
-    width: 100%;
+    width: 99%;
     margin: 0 auto;
     text-align: center;
 }
