@@ -4,7 +4,7 @@ const c = document.getElementById('btn');
 const closeLogin = document.getElementById('popup-login-close');
 //--botones
 const login = document.querySelector('.btn-login');//iniciar sesion index
-// const btnLogout = document.querySelector('.btn-logout');// cerrar sesion index
+const btnLogout = document.querySelector('.btn-logout');// cerrar sesion index
 
 let iniciarSesion = document.querySelector('#iniciar-sesion');// boton iniciar sesion en formulario
 const btnIniciar = document.getElementById('btn-iniciar'); // iniciar sesion formulario (arriba)
@@ -15,9 +15,9 @@ iniciarSesion.addEventListener('click',()=>{
     iniciar();
 })
 
-// btnLogout.addEventListener('click', ()=>{
-//     logout();
-// })
+btnLogout.addEventListener('click', ()=>{
+    logout();
+})
 
 function iniciar(){
 
