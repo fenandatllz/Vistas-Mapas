@@ -10,6 +10,9 @@ const btnIniciar = document.getElementById('btn-iniciar'); // iniciar sesion for
 const btnRegistrar = document.getElementById('btn-registrar');// registrar formulario
 let sesion = sessionStorage.getItem("sesion");
 
+const correoUsuario = "fernandaciprian31@gmail.com";
+const contra = "123456";
+
 function MostrarBtnLogout() {
     if (sesion = true){
         btnLogout.style.display = "block";
@@ -65,6 +68,7 @@ function iniciar(){
 
 btnIniciar.addEventListener('click', () => {
     inicio();
+    MostrarBtnLogout();
 })
 btnRegistrar.addEventListener('click', () =>{
     registro();
@@ -94,8 +98,7 @@ closeLogin.addEventListener('click', ()=>{
     CerrarLoginForm();
 })
 login.addEventListener('click',()=>{
-    //AbrirLoginForm();
-    MostrarBtnLogout();
+    AbrirLoginForm();
 })
 
 
