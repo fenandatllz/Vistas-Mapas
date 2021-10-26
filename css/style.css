@@ -269,7 +269,8 @@ footer i{
 
 /* Hover img */
 .capa img{
-    width: 230px;
+    width: 210px;
+    height: 140px;
 }
 .capa{
     position: absolute;
