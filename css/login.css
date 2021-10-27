@@ -76,11 +76,27 @@
     margin:30px 10px 30px 0;
 }
 
-.popup-login span{
+.popup-login #text-check{
     color:#000;
     font-size: 12px;
     bottom: 68px;
     position:absolute;
+}
+.popup-login #error{
+    position: absolute;
+    bottom: 28%;
+    border: 1px solid #ff0000;
+    margin: 0 3.7rem;
+    width: 75%;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #ff0000;
+    font-size: medium;
+    /* box-shadow: rgba(255, 0, 0, 0.45) 0px 25px 35px -20px; */
+    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+    box-shadow: rgba(255, 0, 0, 0.25) 0px 4px 8px -2px, rgba(255, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: none;
 }
 
 #login{

@@ -22,6 +22,10 @@ header h2{
     font-size: 25px;
     font-weight: bolder;
 }
+#nombre-usuario{
+    color: #fff;
+    font-size: large;
+}
 header .img-logo{
     margin-top: 15px;
     width: 200px;
