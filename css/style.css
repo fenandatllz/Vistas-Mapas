@@ -34,11 +34,11 @@ header .img-logo{
     justify-content: space-between;
 }
 .desarrollo img{
-    width: 400px;
+    width: 100%;
     height: 251px;
 }
 
-.logo{
+.logo-index{
     margin: 0 auto;
     margin-top: 25px;
     width: 150px;
@@ -693,4 +693,19 @@ color: #656565;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 15px solid rgb(73, 70, 70);
+}
+/* Media Querie Movil */
+@media only screen and (min-device-width: 218px) and (max-device-width: 768px) {
+    #logo{
+        display: block;
+        width: 30%;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media only screen and (min-device-width: 769px){
+    #logo{
+        display: none;
+    }
 }

@@ -92,7 +92,7 @@
 
   .btn-login{
       color:#DE9F27;
-      font-size:15px;
+      font-size: 1.5rem;
       border: 2px solid;
       border-color: #DE9F27;
       transition: all 1s ease;
@@ -100,6 +100,7 @@
       padding: 0.5em 1.2em;
       background: rgba(0,0,0,0);
       cursor: pointer;
+      margin: 0 1rem;
   }
 
   .btn-login:hover{
