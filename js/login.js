@@ -8,12 +8,13 @@ const btnLogout = document.querySelector('.btn-logout');// cerrar sesion header
 let iniciarSesion = document.querySelector('#iniciar-sesion');// boton iniciar sesion en formulario
 const btnIniciar = document.getElementById('btn-iniciar'); // iniciar sesion formulario (arriba)
 const btnRegistrar = document.getElementById('btn-registrar');// registrar formulario
-// let sesion = sessionStorage.getItem('sesion');
+
 const nombreUsuario = document.getElementById('nombre-usuario');
 let Msg = document.getElementById('error');
 
 const correoUsuario = "fernandaciprian31@gmail.com";
 const contra = "123456";
+
 
 //     login.style.display = sesion ? "block" : "none"
 //     btnLogout.style.display = sesion ? "none" : "block";
@@ -87,5 +88,17 @@ login.addEventListener('click',()=>{
     AbrirLoginForm();
 })
 
+if(sessionStorage.getItem("sesion") == true)
+{
+    btnLogout.style.display = "block"
+    login.style.display = "none"
+    nombreUsuario.innerText = "Bienveido(a): "+ sessionStorage.getItem('usuario')
+    window.location.href = "index.html";
 
+}
+else{
+    btnLogout.style.display = "none"
+    login.style.display = "block"
+    nombreUsuario.style.display = "none"
+}
 
