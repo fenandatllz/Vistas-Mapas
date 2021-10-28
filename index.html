@@ -17,13 +17,15 @@
     </div>
 <nav class="menu">
     <a href="#">
-        <img src="https://download-accl.zoho.com/v1/docs/prv/i8756b24e8c232e0c4decb5911f28b49469b0?_t=1630356068833" >
+        <img class="logo" src="https://download-accl.zoho.com/v1/docs/prv/i8756b24e8c232e0c4decb5911f28b49469b0?_t=1630356068833" >
+        <img id="logo" src="img/Logo Grupo Concordia Piramide.png" alt="">
     </a>
-    <button id="btn-login" class="btn-login">Iniciar Sesión</button>
+    <h2 id="nombre-usuario"> </h2>
+    <button id="btn-login" class="btn-login">Iniciar Sesión</button>  
     <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
 </nav>
 <header>
-    <img class="logo" src="https://download-accl.zoho.com/v1/docs/prv/mmwg62f4810a4ff7d493eb0a23262d1fb287b?_t=1630362401369">
+    <img class="logo-index" src="https://download-accl.zoho.com/v1/docs/prv/mmwg62f4810a4ff7d493eb0a23262d1fb287b?_t=1630362401369">
     <h2>DESARROLLOS</h2>
     <div class="division"></div>
 </header>  
@@ -120,12 +122,13 @@
       <button id="btn-iniciar" type="button" class="toggle-btn">Iniciar Sesión</button>
       <button id="btn-registrar" type="button" class="toggle-btn">Registrar</button>
   </div>
-  <form  id="login" class="input-group">
+  <form action="javascript:iniciar(this)" id="login" class="input-group">
       <input id="correo" type="email" class="input-field" placeholder="Correo electrónico" required>
       <input id="contrase_a" type="password" class="input-field" placeholder="Contraseña" required>
-      <input type="checkbox" class="checkbox"><span>Recordar Contraseña</span>
-      <button type="submit" class="submit-btn" id="iniciar-sesion">Iniciar Sesión</button>
+      <input type="checkbox" class="checkbox"><span id="text-check">Recordar Contraseña</span>
+      <button class="submit-btn" id="iniciar-sesion">Iniciar Sesión</button>
   </form>
+  <span id="error"></span>
   <form id="registro" class="input-group">
       <input type="text" class="input-field" placeholder="Nombre(s)" required>
       <input type="text" class="input-field" placeholder="Apellidos" required>

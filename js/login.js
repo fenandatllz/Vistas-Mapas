@@ -8,44 +8,24 @@ const btnLogout = document.querySelector('.btn-logout');// cerrar sesion header
 let iniciarSesion = document.querySelector('#iniciar-sesion');// boton iniciar sesion en formulario
 const btnIniciar = document.getElementById('btn-iniciar'); // iniciar sesion formulario (arriba)
 const btnRegistrar = document.getElementById('btn-registrar');// registrar formulario
-let sesion = sessionStorage.getItem("sesion");
+// let sesion = sessionStorage.getItem('sesion');
+const nombreUsuario = document.getElementById('nombre-usuario');
+let Msg = document.getElementById('error');
 
-function MostrarBtnLogout() {
-    if (sesion = true){
-        btnLogout.style.display = "block";
-        login.style.display = "none";
-        
-     }
-     else{
-        btnLogout.style.display = "none";
-         login.style.display = "block";
-     }
+const correoUsuario = "fernandaciprian31@gmail.com";
+const contra = "123456";
 
-    // btnLogout.style.display = sesion ? "block" : "none";
-    // login.style.display = sesion ? "none" : "block";
-}
-
-function MostrarBtnLogin(){
-    if (sesion = true){
-       login.style.display = "block";
-       btnLogout.style.display = "none";
-    }
-    else{
-        login.style.display = "none"
-        btnLogout.style.display = "block";
-    }
 //     login.style.display = sesion ? "block" : "none"
 //     btnLogout.style.display = sesion ? "none" : "block";
-}
-function logout(){
-    sessionStorage.clear();
-}
 
 btnLogout.addEventListener('click', ()=>{
     logout();
-    MostrarBtnLogin();
 })
 
+function logout(){
+    sessionStorage.clear();
+
+}
 
 iniciarSesion.addEventListener('click',()=>{
     iniciar();
@@ -57,11 +37,21 @@ function iniciar(){
     sessionStorage.setItem("correo", document.getElementById('correo').value)
     sessionStorage.setItem("contrase_a", document.getElementById('contrase_a').value)
     sessionStorage.setItem("sesion", true)
-    // btnLogout.style.display = "flex";
-    // alert(localStorage.getItem("correo") +"\n" + localStorage.getItem("contra"));
+    
+    if(sessionStorage.getItem("correo") == correoUsuario && sessionStorage.getItem("contrase_a") == contra)
+    {   
+        // window.location.href = "index-copia.html";
+        btnLogout.style.display = "block"
+        login.style.display = "none"
+        nombreUsuario.innerText = "Bienveido(a): "+ sessionStorage.getItem('usuario')
+        CerrarLoginForm();
+    } 
+    else
+    {
+        Msg.innerText = "Usuario y/o contraseña incorrectos";
+        Msg.style.display = "block";
+    }
 }
-
-
 
 btnIniciar.addEventListener('click', () => {
     inicio();
@@ -94,8 +84,7 @@ closeLogin.addEventListener('click', ()=>{
     CerrarLoginForm();
 })
 login.addEventListener('click',()=>{
-    //AbrirLoginForm();
-    MostrarBtnLogout();
+    AbrirLoginForm();
 })
 
 
