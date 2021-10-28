@@ -29,3 +29,10 @@
     stroke: #cbbf37;
     stroke-width: 0.88px;
   } 
+
+  @media(max-width: 768px){
+    #mapa-interactivo svg{
+      width: 750px;
+      height: 1000px;
+    }
+  }

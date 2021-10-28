@@ -8,17 +8,17 @@ html {
     box-sizing: inherit;
 }
 body {
-    width: 100vw;
+    width: 100%;
     background-color: #F3F3F3;
     font-family:Lato, sans-serif;
 }
 
 header{
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
-header p{
+header h2{
     font-size: 25px;
     font-weight: bolder;
 }
@@ -28,17 +28,14 @@ header .img-logo{
 }
 .menu{
     width: 100%;
-    padding: 2.3rem;
+    padding: 3rem;
     background-color: #000;
     display: flex;
     justify-content: space-between;
 }
-.desarrollo img{
-    width: 400px;
-    height: 251px;
-}
 
-.logo{
+
+.logo-index{
     margin: 0 auto;
     margin-top: 25px;
     width: 150px;
@@ -72,7 +69,7 @@ header .img-logo{
 }
 
 .contenedor {
-    max-width: 120rem;
+    width: 82.5%;
     margin: 0 auto;
 }
 .nombre-desarrollo{
@@ -108,9 +105,7 @@ footer i{
     color: #fff;
     text-decoration: none;
 }
-.col-2 svg{
-    margin-right: 30px;
-}
+
 .col-2{
     margin-top: 15px;
     padding-left: 90px;
@@ -134,6 +129,7 @@ footer i{
     margin-top: 30px;
     display: grid;
     gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 @media (min-width: 768px) {
     .grid {
@@ -148,9 +144,120 @@ footer i{
     padding: 0%;
     height: 290px;
 }
+
+@media (min-width: 769px){
+    .desarrollo img{
+        width: 100%;
+        height: 251px;
+    }
+    .desarrollo:hover .capa{
+        bottom: 0;
+        opacity: 1;
+    }
+    .capa img{
+        width: 200px;
+        height: 120px;
+    }
+    .capa{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        transition: all 0.3s;
+    }
+    .arriba{
+	display: inline-block;
+	padding:20px;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+    
+}
+
+@media (max-width: 768px){
+
+    .desarrollo{
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0, 0.3);
+        padding: 0%;
+        height: 205px;
+    }
+
+    .nombre-desarrollo{
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .desarrollo img{
+        width: 200px;
+        height: 210px;
+    }
+    .tres-columnas{
+        padding-left: 15px;
+    }
+    .col-2{
+        margin-top: 15px;
+        
+    
+    }
+    .col-3{
+        margin-top:18px;
+    }
+   
+}
+
+@media (max-width: 480px ){
+    .desarrollo{
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0, 0.3);
+        padding: 0%;
+        width: 150px;
+        height: 170px;
+    }
+
+    .desarrollo img{
+        width: 150px;
+        height: 190px;
+    }
+
+    .nombre-desarrollo{
+        width: 100%;
+        height: 31px;
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .tres-columnas{
+        padding-left: 15px;
+    }
+    .col-2{
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+}
+
 .grid a{
     text-decoration: none;
 }
+
+
 /* Desarrollos */
 
 @media (min-width: 768px) {
@@ -267,36 +374,9 @@ footer i{
     cursor: pointer;
   }
 
-/* Hover img */
-.capa img{
-    width: 210px;
-    height: 140px;
-}
-.capa{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: -100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-    transition: all 0.3s;
-}
 
-.desarrollo:hover .capa{
-    bottom: 0;
-    opacity: 1;
-}
 /* Flecha navegacion */
-.arriba{
-	display: inline-block;
-	padding:20px;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-}
+
 /* Carrusel Header*/  
 #container-slider
 {
@@ -693,4 +773,19 @@ color: #656565;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 15px solid rgb(73, 70, 70);
+}
+/* Media Querie Movil */
+@media only screen and (min-device-width: 218px) and (max-device-width: 768px) {
+    #logo{
+        display: block;
+        width: 30%;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media only screen and (min-device-width: 769px){
+    #logo{
+        display: none;
+    }
 }
