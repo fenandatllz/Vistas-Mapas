@@ -281,12 +281,12 @@ footer i{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.servicios-amenidades h2{
+    margin-bottom:15px;
+}
+
 @media(min-width:768px){
-    .servicios-amenidades{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        font-family:Inter;
-    }
     .servicios-amenidades i{
         width: 2px;
         height:2px;
@@ -303,10 +303,18 @@ footer i{
     }
     .servicios{
         width:450px;
-        padding-left: 100px;
-        
+        padding-left: 100px;  
     } 
-
+    .amenidades{
+        padding-left: 100px;
+    }
+    .servicios{
+        padding-left: 100px;
+    }
+    .servicios-amenidades p{
+        font-size: 17px;
+        line-height: 4rem;
+    }
 }
 
 @media(max-width:480px){
@@ -318,8 +326,8 @@ footer i{
         font-size: 10px;
     }
     .servicios-amenidades p{
-        font-size: 13px;
-        line-height: 2rem;
+        font-size: 10px;
+        line-height: 2.5rem;
     }
     .servicios-amenidades i{
         width: 2px;
@@ -328,6 +336,19 @@ footer i{
         color: #DE9F27;
         margin-left:0;
     }
+    .servicios{
+        width:300px;
+        padding-left: 30px;
+    }
+    .amenidades{
+        width:170px;
+        padding-left:10px;
+    }
+    .col-2{
+        margin-top: 15px;
+        padding-left:1px;
+    }
+      
 }
 
 .servicios-amenidades i{
@@ -336,12 +357,16 @@ footer i{
     margin-right: 20px;
     color: #DE9F27;
 }
-.amenidades{
+/* .amenidades{
     padding-left: 100px;
 }
 .servicios{
     padding-left: 100px;
 }
+.servicios-amenidades p{
+    font-size: 17px;
+    line-height: 4rem;
+} */
 
 /* Dropdown */
 .secciones{
@@ -605,7 +630,7 @@ footer i{
     opacity:1;
     transform:translate(-50%,-50%) scale(1);
   }
-  .popup .popup-close {
+   .popup .popup-close {
     position:absolute;
     top:-10px;
     right:-10px;
