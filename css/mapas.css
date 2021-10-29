@@ -36,3 +36,9 @@
       height: 1000px;
     }
   }
+  @media (max-width:480px) {
+    #mapa-interactivo svg{
+      width: 550px;
+      height: 600px;
+    }
+  }
