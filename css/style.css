@@ -120,10 +120,8 @@ footer i{
     }
 }
 
-.servicios-amenidades p{
-    font-size: 20px;
-    line-height: 4rem;
-}
+
+
 /* Grid Desarrollos Index*/
 .grid{
     margin-top: 30px;
@@ -283,6 +281,55 @@ footer i{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+@media(min-width:768px){
+    .servicios-amenidades{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family:Inter;
+    }
+    .servicios-amenidades i{
+        width: 2px;
+        height:2px;
+        margin-right: 50px;
+        color: #DE9F27;
+    }
+    .servicios-amenidades p{
+        font-size: 15px;
+        line-height: 2.5rem;
+    }
+    .amenidades{
+        padding-left: 100px;
+        margin-left:0;
+    }
+    .servicios{
+        width:450px;
+        padding-left: 100px;
+        
+    } 
+
+}
+
+@media(max-width:480px){
+    .servicios-amenidades{
+        width: 100;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family:Inter;
+        font-size: 10px;
+    }
+    .servicios-amenidades p{
+        font-size: 13px;
+        line-height: 2rem;
+    }
+    .servicios-amenidades i{
+        width: 2px;
+        height:2px;
+        margin-right: 20px;
+        color: #DE9F27;
+        margin-left:0;
+    }
+}
+
 .servicios-amenidades i{
     width: 3px;
     height: 3px;
