@@ -44,7 +44,7 @@ function iniciar(){
         // window.location.href = "index-copia.html";
         btnLogout.style.display = "block"
         login.style.display = "none"
-        nombreUsuario.innerText = "Bienveido(a): "+ sessionStorage.getItem('usuario')
+        nombreUsuario.innerText = "Bienvenido(a): "+ sessionStorage.getItem('usuario')
         CerrarLoginForm();
     } 
     else
