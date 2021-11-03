@@ -1,0 +1,17 @@
+<nav class="menu">
+    <a href="index.html">
+        <img class="logo" src="img/logo-nav.png" >
+        <img id="logo" src="img/Logo Grupo Concordia Piramide.png" alt="">
+    </a>
+        <h2 id="nombre-usuario"> </h2>
+        <button id="btn-logout" class="btn-logout"  onclick="logout()">Cerrar Sesión</button>
+</nav>
+<script>
+    let nombreUsuario = document.getElementById('nombre-usuario');
+    nombreUsuario.innerText = "Bienvenido(a): "+ sessionStorage.getItem('usuario')
+    
+    function logout(){
+        sessionStorage.clear();
+        $("#header").load("header.html");
+    }
+</script>

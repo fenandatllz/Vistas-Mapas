@@ -33,19 +33,16 @@ iniciarSesion.addEventListener('click',()=>{
 })
 
 function iniciar(){
-
-    sessionStorage.setItem("usuario", "Fernanda")
-    sessionStorage.setItem("correo", document.getElementById('correo').value)
-    sessionStorage.setItem("contrase_a", document.getElementById('contrase_a').value)
-    sessionStorage.setItem("sesion", true)
     
-    if(sessionStorage.getItem("correo") == correoUsuario && sessionStorage.getItem("contrase_a") == contra)
+    if(document.getElementById('correo').value == correoUsuario && document.getElementById('contrase_a').value == contra)
     {   
         // window.location.href = "index-copia.html";
-        btnLogout.style.display = "block"
-        login.style.display = "none"
-        nombreUsuario.innerText = "Bienvenido(a): "+ sessionStorage.getItem('usuario')
+        sessionStorage.setItem("usuario", "Fernanda")
+        sessionStorage.setItem("correo", document.getElementById('correo').value)
+        sessionStorage.setItem("contrase_a", document.getElementById('contrase_a').value)
+        sessionStorage.setItem("sesion", true)
         CerrarLoginForm();
+        mostrarLogout();
     } 
     else
     {
@@ -72,6 +69,11 @@ function inicio (){
     b.style.left = '450px';
     c.style.left = '0px';
 }
+function mostrarLogout(){
+    btnLogout.style.display = "block"
+    login.style.display = "none"
+    nombreUsuario.innerText = "Bienvenido(a): "+ sessionStorage.getItem('usuario')
+}
 
 // FormularioLogin 
 export function AbrirLoginForm(){
@@ -87,18 +89,4 @@ closeLogin.addEventListener('click', ()=>{
 login.addEventListener('click',()=>{
     AbrirLoginForm();
 })
-
-if(sessionStorage.getItem("sesion") == true)
-{
-    btnLogout.style.display = "block"
-    login.style.display = "none"
-    nombreUsuario.innerText = "Bienveido(a): "+ sessionStorage.getItem('usuario')
-    window.location.href = "index.html";
-
-}
-else{
-    btnLogout.style.display = "none"
-    login.style.display = "block"
-    nombreUsuario.style.display = "none"
-}
 
