@@ -315,11 +315,17 @@ footer i{
         font-size: 17px;
         line-height: 4rem;
     }
+    .wrapper{
+        width: 420px;
+        padding: 30px 20px;
+        position: absolute;
+        overflow: hidden;
+    }
 }
 
 @media(max-width:480px){
     .servicios-amenidades{
-        width: 100;
+        /* width: 100; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-family:Inter;
@@ -337,7 +343,7 @@ footer i{
         margin-left:0;
     }
     .servicios{
-        width:300px;
+        /* width:240px; */
         padding-left: 30px;
     }
     .amenidades{
@@ -347,6 +353,12 @@ footer i{
     .col-2{
         margin-top: 15px;
         padding-left:1px;
+    }
+    .wrapper{
+        /* width: 10px;  */
+        padding: 30px 20px;
+        position: absolute;
+        overflow: hidden;
     }
       
 }
@@ -727,12 +739,6 @@ footer i{
   }
  
 /* Alertas */
-.wrapper{
-    width: 420px;
-    padding: 30px 20px;
-    position: absolute;
-    overflow: hidden;
-}
 
 #toast, #toast2{
     width: 380px;
