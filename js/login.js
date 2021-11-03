@@ -25,6 +25,7 @@ btnLogout.addEventListener('click', ()=>{
 
 function logout(){
     sessionStorage.clear();
+    mostrarLogin();
 
 }
 
@@ -73,6 +74,11 @@ function mostrarLogout(){
     btnLogout.style.display = "block"
     login.style.display = "none"
     nombreUsuario.innerText = "Bienvenido(a): "+ sessionStorage.getItem('usuario')
+}
+function mostrarLogin(){
+    btnLogout.style.display = "none"
+    login.style.display = "block"
+    nombreUsuario.innerText = " "
 }
 
 // FormularioLogin 
