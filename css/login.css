@@ -116,6 +116,9 @@
       cursor: pointer;
       margin: 0 1rem;
   }
+#nombre-usuario{
+    color: #fff;
+}
   @media (max-width:480px){
         .btn-login{
             color:#DE9F27;

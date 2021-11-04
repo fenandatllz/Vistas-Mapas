@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/all.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom-container@0.5.0"></script>
 
     <title>Detalles Fraccionamiento</title>
 </head>
@@ -85,7 +86,9 @@
     </main>
 
     <div class="contenedor-mapa">
-        <div id="mapa-interactivo" class="mapa-interactivo"> </div>
+        <div data-zoom-on-wheel data-pan-on-drag id="mapa-interactivo" class="mapa-interactivo"> 
+            
+        </div>
         <div class="zoom-flex"> 
             <a class="btnz zoom"><i class="fas fa-search-plus"></i></a>
             <a class="btnz zoom-out"><i class="fas fa-search-minus"></i></a>
