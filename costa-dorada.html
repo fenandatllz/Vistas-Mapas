@@ -85,7 +85,7 @@
     </main>
 
     <div class="contenedor-mapa">
-        <div id="mapa-interactivo" class="mapa-interactivo"> </div>
+        <div id="mapa-interactivo" class="mapa-interactivo" data-zoom-on-wheel data-pan-on-drag> </div>
         <div class="zoom-flex"> 
             <a class="btnz zoom"><i class="fas fa-search-plus"></i></a>
             <a class="btnz zoom-out"><i class="fas fa-search-minus"></i></a>
@@ -93,6 +93,7 @@
         </div>
     </div>
     <div id="info-lote" class="burbuja"> </div>
+    
     <!-- MODAL PAGO DE APARTADO -->
 <div class="popup-overlay"></div>
 <div id="modal"class="popup">
@@ -233,5 +234,6 @@
     <script src="./js/mapas.js" type="module"></script>
     <script src="./js/alertas.js" type="module"></script>
     <script src="./js/login.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom-container@0.5.0"></script>
 </body>
 </html>
