@@ -166,16 +166,7 @@ footer i{
         align-items: center;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
         transition: all 0.3s;
-    }
-    .arriba{
-	display: inline-block;
-	padding:20px;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-}
-    
+    }   
 }
 
 @media (max-width: 768px){
@@ -208,8 +199,6 @@ footer i{
     }
     .col-2{
         margin-top: 15px;
-        
-    
     }
     .col-3{
         margin-top:18px;
@@ -414,7 +403,7 @@ footer i{
     width: auto;
     height: 95vh;
     overflow-x: auto;
-    overflow-y: y;
+    /* overflow-y: y;  */
     border-radius: 11px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     background-color: #000;
@@ -446,7 +435,32 @@ footer i{
     transition: all 0.3s ease;
     bottom: 670px;
     margin-right: 40px;
-    
+  } 
+
+  @media(max-width:768px){
+    .btnz {
+        display:none;
+        /* width: 5rem;
+        height: 5rem;
+        background: #de9f27;
+        border: 2px solid #000;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        position: relative;
+        color: #fff;
+        padding: 15px 10px 5px;
+         text-align: center;
+        -ms-user-select: none;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        transition: all 0.3s ease;
+        bottom: 950px;
+        margin-left: 8px;
+        margin-right: 40px; */
+      } 
   }
    .btnz i{
       font-size: large;
@@ -460,7 +474,14 @@ footer i{
 
 
 /* Flecha navegacion */
-
+.arriba{
+	display: inline-block;
+	padding:20px;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
 /* Carrusel Header*/  
 #container-slider
 {
@@ -867,3 +888,5 @@ color: #656565;
         display: none;
     }
 }
+
+
