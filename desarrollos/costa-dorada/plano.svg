@@ -4,7 +4,7 @@
       @import url(./css/mapas.css);
     </style>
     <filter id="filter" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#de9f27"/>
+      <!-- <feFlood result="flood" flood-color="#000"/> -->
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>

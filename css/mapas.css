@@ -8,16 +8,26 @@
   }
 
   .cls-2 {
-    fill: none;
-    stroke: #000;
+    fill: #000;
+    stroke: #de9f27;
     stroke-width: 1.96px;
   }
   .cls-2:hover{
     cursor: pointer;
-    
   }
+
   .cls-2, .cls-3, .cls-4, .cls-5 {
     fill-rule: evenodd;
+  }
+
+  [data-manzana]:hover{
+    fill: #de9f27;
+    cursor: pointer;
+  }
+
+  [data-lote]:hover{
+    fill: #de9f27;
+    cursor: pointer;
   }
 
   .cls-3 {
