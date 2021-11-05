@@ -874,7 +874,7 @@ color: #656565;
     border-top: 15px solid rgb(73, 70, 70);
 }
 /* Media Querie Movil */
-@media only screen and (min-device-width: 218px) and (max-device-width: 768px) {
+/* @media only screen and (min-device-width: 218px) and (max-device-width: 768px) {
     #logo{
         display: block;
         width: 30%;
@@ -887,6 +887,18 @@ color: #656565;
     #logo{
         display: none;
     }
+} */
+
+@media(max-width:480px){
+    #logo{
+        display: none;
+    }
 }
+@media(max-width:768px){
+    #logo{
+        display: none;
+    }
+}
+
 
 
