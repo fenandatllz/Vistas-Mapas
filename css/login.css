@@ -196,6 +196,7 @@
           .btn-logout{
             color:#DE9F27;
             font-size:5px;
+            text-align: inherit;
             border: 1px solid;
             border-color: #DE9F27;
             transition: all 1s ease;
