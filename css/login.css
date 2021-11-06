@@ -167,10 +167,10 @@
   }
 
 
-  @media only screen and (min-device-width: 218px) and (max-device-width: 768px){
+  @media only screen and (min-device-width: 218px) and (max-device-width: 767px){
         .btn-login {
             font-size: 10px;
-            width: 120px;
+            width: 160px;
             height: 30px;
         }
         ::placeholder{
@@ -185,15 +185,24 @@
           }  
           .btn-logout{
             font-size:10px;       
-            width:135px;
+            width:160px;
             height:30px;
+            
           }
         .popup-login #error{
             bottom: 18%;
         }   
     }
 
-
+    @media(min-width:768px){
+        .popup-login{
+            width:430px;
+            height:580px;
+        }
+        .popup-login .popup-close-login{
+           right:  -60px;
+        }
+    }
 
   body.MostrarLoginForm .popup-overlay-login {
     display:block;
