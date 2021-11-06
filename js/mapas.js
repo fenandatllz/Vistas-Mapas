@@ -1,15 +1,14 @@
-// import  * as alertas  from "./alertas.js";
 import { openLoginForm } from "./alertas.js";
 import { AbrirLoginForm } from "./login.js";
 // const btnGetDesarrollo = document.querySelector('#get-desarrollo');
 // const getDesarrollo = document.querySelector('#nombre-desarrollo');
-// console.log(getDesarrollo.innerHTML);
+
 const correoUsuario = "fernandaciprian31@gmail.com";
 const contra = "123456";
 
 let posicionY = 0;
 let posicionX = 0;
-// let posicionModal = 0;
+
 const toolTip = document.getElementById('info-lote');
 let mapa = document.getElementById('mapa-interactivo');
 
@@ -17,8 +16,7 @@ const loadManzana = async (desarrollo, manzana) => {
   fetch(`./desarrollos/${desarrollo}/Manzanas/${manzana}.svg`)
     .then((svg) => svg.text())
     .then((html) => (mapa.innerHTML = html))
-    console.log(loadManzana);
-    
+    console.log(loadManzana); 
     
 }
 
@@ -52,6 +50,8 @@ mapa.addEventListener('click', (e) => {
     let auxManzana = e.target.id.split('-') 
     const manzana = auxManzana[0];
     const fraccionamiento = e.target.closest('svg').dataset.desarrollo
+    posicionY = e.pageY;
+    posicionX = e.pageX;
     console.log(fraccionamiento, manzana)
     loadManzana(fraccionamiento, manzana)
     
@@ -68,7 +68,6 @@ mapa.addEventListener('click', (e) => {
 
   if (e.target.matches('[data-lote]')) {
     console.log(`${desarrollo} ${e.target.id}`)
-    // console.log(`posicion:  ${posicionModal}`);
     if(sessionStorage.getItem("correo") == correoUsuario && sessionStorage.getItem("contrase_a") == contra){
       modal.style.top = posicionModal + 'px';
       openLoginForm();
