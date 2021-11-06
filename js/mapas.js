@@ -17,7 +17,8 @@ const loadManzana = async (desarrollo, manzana) => {
   fetch(`./desarrollos/${desarrollo}/Manzanas/${manzana}.svg`)
     .then((svg) => svg.text())
     .then((html) => (mapa.innerHTML = html))
-console.log(loadManzana);
+    console.log(loadManzana);
+    
     
 }
 
@@ -47,11 +48,13 @@ console.log(loadManzana);
 
 mapa.addEventListener('click', (e) => {
   if (e.target.matches('[data-manzana]')) {
+   
     let auxManzana = e.target.id.split('-') 
     const manzana = auxManzana[0];
     const fraccionamiento = e.target.closest('svg').dataset.desarrollo
     console.log(fraccionamiento, manzana)
     loadManzana(fraccionamiento, manzana)
+    
   }
 })
 
