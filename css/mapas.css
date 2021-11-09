@@ -3,8 +3,21 @@
   height: 1900;
 }
 
-.cls-1 {
+  #Nombres{
+    background: black;
+  }
+
+  .cls-1 {
     filter: url(#filter);
+  }
+
+  [data-lote]:hover{
+    fill: #de9f27;
+    cursor: pointer;
+  }
+  [data-manzana]:hover{
+    fill: #de9f27;
+    cursor: pointer;
   }
 
   .cls-2 {
@@ -12,33 +25,20 @@
     stroke: #de9f27;
     stroke-width: 1.96px;
   }
-  .cls-2:hover{
-    cursor: pointer;
-  }
-
+  
   .cls-2, .cls-3, .cls-4, .cls-5 {
     fill-rule: evenodd;
   }
 
-  [data-manzana]:hover{
-    fill: #de9f27;
-    cursor: pointer;
-  }
-
-  [data-lote]:hover{
-    fill: #de9f27;
-    cursor: pointer;
-  }
-
   .cls-3 {
-    fill: #de9f27;
+    fill: #010101;
   }
 
   .cls-4, .cls-6 {
     fill: #de9f27;
     stroke: #cbbf37;
     stroke-width: 0.88px;
-  } 
+  }
 
   @media(max-width: 768px){
     #mapa-interactivo svg{
