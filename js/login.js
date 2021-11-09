@@ -86,7 +86,11 @@ export function AbrirLoginForm(){
     document.body.classList.add("MostrarLoginForm");
 } 
 function CerrarLoginForm(){
+    const modalLogin = document.getElementById('modal-login');
+    modalLogin.style.top = -150 + "%";
     document.body.classList.remove("MostrarLoginForm");
+    
+    
 }
 
 closeLogin.addEventListener('click', ()=>{
