@@ -31,13 +31,13 @@
   }
 
   .cls-3 {
-    fill: #010101;
+    fill:#de9f27;
   }
 
   .cls-4, .cls-6 {
     fill: #de9f27;
-    stroke: #cbbf37;
-    stroke-width: 0.88px;
+    stroke: #de9f27;;
+    stroke-width: 3.8px;
   }
 
   @media(max-width: 768px){
