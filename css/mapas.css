@@ -36,8 +36,8 @@
 
   .cls-4, .cls-6 {
     fill: #de9f27;
-    stroke: #de9f27;;
-    stroke-width: 3.8px;
+    stroke: #de9f27;
+    stroke-width: 5px;
   }
 
   @media(max-width: 768px){

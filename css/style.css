@@ -304,7 +304,6 @@ footer i{
 
 @media(max-width:480px){
     .servicios-amenidades{
-        /* width: 100; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-family:Inter;
@@ -322,7 +321,6 @@ footer i{
         margin-left:0;
     }
     .servicios{
-        /* width:240px; */
         padding-left: 30px;
     }
     .amenidades{
@@ -334,7 +332,6 @@ footer i{
         padding-left:1px;
     }
     .wrapper{
-        /* width: 10px;  */
         padding: 30px 20px;
         position: absolute;
         overflow: hidden;
@@ -348,16 +345,6 @@ footer i{
     margin-right: 20px;
     color: #DE9F27;
 }
-/* .amenidades{
-    padding-left: 100px;
-}
-.servicios{
-    padding-left: 100px;
-}
-.servicios-amenidades p{
-    font-size: 17px;
-    line-height: 4rem;
-} */
 
 /* Dropdown */
 .secciones{
@@ -430,26 +417,6 @@ footer i{
   @media(max-width:768px){
     .btnz {
         display:none;
-        /* width: 5rem;
-        height: 5rem;
-        background: #de9f27;
-        border: 2px solid #000;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        position: relative;
-        color: #fff;
-        padding: 15px 10px 5px;
-         text-align: center;
-        -ms-user-select: none;
-        -moz-user-select: -moz-none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-        transition: all 0.3s ease;
-        bottom: 950px;
-        margin-left: 8px;
-        margin-right: 40px; */
       } 
   }
    .btnz i{
@@ -851,7 +818,7 @@ color: #656565;
     display: none;
   }
   
-  #info-lote:after{
+  /* #info-lote:after{
     content: "";
     position: absolute;
     top: 10px;
@@ -862,7 +829,7 @@ color: #656565;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 15px solid rgb(73, 70, 70);
-}
+} */
 /* Media Querie Movil */
 @media only screen and (min-device-width: 218px) and (max-device-width: 768px) {
     #logo{
