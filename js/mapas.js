@@ -87,6 +87,7 @@ mapa.addEventListener('click', (e) => {
   }
 })
 mapa.addEventListener('touchstart',showPopup);
+mapa.addEventListener('touchend',hidePopup);
 
 mapa.addEventListener('mouseover', (e) => {
   if (e.target.matches('[data-lote]')) {
