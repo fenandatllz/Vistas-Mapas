@@ -380,11 +380,11 @@ footer i{
     width: auto;
     height: 95vh;
     overflow-x: auto;
-    /* overflow-y: y;  */
+    scroll-snap-type: y mandatory;
     border-radius: 11px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    background-color: #000;
     margin-top: 15px;
+    background-color: #000;
 }
 .zoom-flex{
     height: 70px;
@@ -396,11 +396,11 @@ footer i{
     width: 5rem;
     height: 5rem;
     background: #de9f27;
-    border: 2px solid #000;
+    /* border: 1px solid #000; */
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    position: relative;
+    position: static;
     color: #fff;
     padding: 15px 10px 5px;
      text-align: center;
@@ -410,7 +410,7 @@ footer i{
     -webkit-user-select: none;
     user-select: none;
     transition: all 0.3s ease;
-    bottom: 670px;
+    /* top: 200%; */
     margin-right: 40px;
   } 
 
@@ -425,7 +425,7 @@ footer i{
   .btnz:hover {
     background: #f3f3f3;
     color: #de9f27;
-    border-color: #de9f27;
+    border: 1px solid #de9f27;
     cursor: pointer;
   }
 

@@ -1,10 +1,11 @@
-#mapa-interactivo svg{
+/* #mapa-interactivo svg{
   width: 2400;
   height: 1900;
-}
+} */
 
   #Nombres{
     background: black;
+
   }
 
   .cls-1 {
@@ -30,14 +31,14 @@
     fill-rule: evenodd;
   }
 
-  .cls-3 {
+  /* .cls-3 {
     fill:#de9f27;
-  }
+  } */
 
   .cls-4, .cls-6 {
     fill: #de9f27;
     stroke: #de9f27;
-    stroke-width: 5px;
+    stroke-width: 1px;
   }
 
   @media(max-width: 768px){

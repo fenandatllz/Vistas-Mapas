@@ -2,6 +2,7 @@ import { openLoginForm } from "./alertas.js";
 import { AbrirLoginForm } from "./login.js";
 // const btnGetDesarrollo = document.querySelector('#get-desarrollo');
 // const getDesarrollo = document.querySelector('#nombre-desarrollo');
+let zoom = 1;
 
 const correoUsuario = "fernandaciprian31@gmail.com";
 const contra = "123456";
@@ -11,6 +12,7 @@ let posicionX = 0;
 
 const toolTip = document.getElementById('info-lote');
 let mapa = document.getElementById('mapa-interactivo');
+let svg = document.querySelector('#Manzana')
 
 const loadManzana = async (desarrollo, manzana) => {
   fetch(`./desarrollos/${desarrollo}/Manzanas/${manzana}.svg`)
@@ -52,8 +54,12 @@ mapa.addEventListener('click', (e) => {
     const fraccionamiento = e.target.closest('svg').dataset.desarrollo
     posicionY = e.pageY;
     posicionX = e.pageX;
+    // console.log(svg);
+    // svg.style.transform = "scale ("+zoom+")";
     console.log(fraccionamiento, manzana)
     loadManzana(fraccionamiento, manzana)
+    e.preventDefault()
+    console.log(e)
     
   }
 })
@@ -80,6 +86,7 @@ mapa.addEventListener('click', (e) => {
     
   }
 })
+mapa.addEventListener('touchstart',showPopup);
 
 mapa.addEventListener('mouseover', (e) => {
   if (e.target.matches('[data-lote]')) {
@@ -132,3 +139,18 @@ mapa.addEventListener('mouseout', (e) => {
     .then((html) => (mapa.innerHTML = html))
     .catch((err) => alert(err))
 */
+		
+		$('.zoom').on('click', function(){
+			zoom += 0.1;
+			$('.target').css('transform', 'scale(' + zoom + ')');
+		});
+		$('.zoom-init').on('click', function(){
+			zoom = 1;
+			$('.target').css('transform', 'scale(' + zoom + ')');
+		});
+		$('.zoom-out').on('click', function(){
+            if(zoom != 1){
+                zoom -= 0.1;
+                $('.target').css('transform', 'scale(' + zoom + ')');
+            }	
+		});

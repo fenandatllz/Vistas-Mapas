@@ -1,0 +1,30 @@
+.cls-1 {
+    filter: url(#filter);
+  }
+
+  .cls-2 {
+    fill: none;
+    stroke: #000;
+  }
+  
+  [data-manzana]:hover{
+    fill: #de9f27;
+    cursor: pointer;
+  }
+
+  .cls-2, .cls-3, .cls-5 {
+    stroke-width: 1.96px;
+  }
+
+  .cls-2, .cls-3, .cls-4 {
+    fill-rule: evenodd;
+  }
+
+  .cls-3, .cls-5 {
+    fill: #cbbf37;
+    stroke: #cbbf37;
+  }
+
+  .cls-4 {
+    fill: #010101;
+  }
